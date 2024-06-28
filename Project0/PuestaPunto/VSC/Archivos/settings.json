@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Palenight Italic", // Establece el tema de color de la interfaz de usuario
+    "terminal.integrated.cursorBlinking": true,// Configura el parpadeo del cursor en el terminal integrado
+    "editor.cursorBlinking": "expand", // Define el estilo de parpadeo del cursor en el editor de código
+    "breadcrumbs.enabled": true,// Habilita las migas de pan en la barra de estado del editor
+    "editor.fontWeight": "bold",// Establece el grosor del texto del editor (negrita)
+    "editor.fontVariations": false, // Controla si se deben aplicar variaciones de fuente al editor (desactivado)
+    "editor.fontLigatures": true, // Habilita las ligaduras de fuente en el editor
+    "editor.fontFamily": "Andale Mono", // Establece la familia de fuentes utilizada en el editor
+    "symbols.hidesExplorerArrows": false, // Controla si los iconos de símbolos ocultan las flechas del explorador de archivos
+    "workbench.iconTheme": "symbols",// Establece el tema de iconos utilizado en la barra lateral del explorador de archivos
+    "editor.minimap.autohide": true // Controla si la minimapa se oculta automáticamente
+}
+
+
