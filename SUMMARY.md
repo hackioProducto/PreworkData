@@ -44,7 +44,7 @@
     * [Condicionales](Project0/Contenido/Excel/Lecciones/09-condicionales.md)
     * [Funciones Operadores de Texto](Project0/Contenido/Excel/Lecciones/10-Funciones-operadores-texto.md)
     * [Manipulacion de Datos](Project0/Contenido/Excel/Lecciones/11-manipulacion-datos.md)
-    * [Tablas Dinámicas]()
+    * [Tablas Dinámicas](Project0/Contenido/Excel/Lecciones/12-tablas-tablas-dinamicas.md)
     * [Visualización](Project0/Contenido/Excel/Lecciones/13-Visualizacion.md)
     * [Ejercicios](Project0/Contenido/Excel/Ejercicios/readme.md)
         * [Reto Excel](Project0/Contenido/Excel/Ejercicios/01-explicacion-datos.md)
