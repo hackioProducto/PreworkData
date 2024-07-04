@@ -8,7 +8,7 @@ description: >-
 </div>
 
 
-### Ejercicios de Relaciones entre Tablas
+# Ejercicios de Relaciones entre Tablas
 
 En este apartado, realizaréis ejercicios prácticos para manejar relaciones entre tablas en SQL. Aprenderéis a utilizar `JOIN` (INNER, LEFT, RIGHT, FULL) para combinar datos de múltiples tablas, trabajar con claves foráneas, y establecer relaciones. 
 

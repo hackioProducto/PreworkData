@@ -1,6 +1,6 @@
 ---
 description: >-
-  Los bucles `for` iteran sobre secuencias como listas y rangos. Usan `range()` para generar secuencias numéricas. Las listas por comprensión crean listas de manera concisa. `for` es ideal para colecciones, mientras `while` para condiciones.
+  Los bucles `for` iteran sobre secuencias como listas y rangos. Las list comprehension crean listas de manera concisa. `for` es ideal para colecciones, mientras `while` para condiciones.
 ---
 
 <div style="text-align: center;">
@@ -159,7 +159,7 @@ Descarga este Jupyter y ábrelo en VS Code.
 #### Función `enumerate`
 <div align="center">
   <a href="https://vimeo.com/933851538/326f418494?share=copy">
-    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="funcion enumerate />
+    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="funcion enumerate" />
   </a>
 </div>
 
@@ -170,10 +170,3 @@ Descarga este Jupyter y ábrelo en VS Code.
     <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="list comprehension" />
   </a>
 </div>
-
-# Jupyter Ejercicios
-
-{% file src="../Ejercicios/08-bucles-for.ipynb" %}
-Descarga este Jupyter y ábrelo en VS Code para practicar.
-{% endfile %}
-

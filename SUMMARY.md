@@ -6,7 +6,7 @@
 * [Conceptos Básicos](Project0/IntroduccionDatos/03-conceptos-basicos.md)
 
 ## 🛠️ Preparación de Entorno
-* [Homebrew](Project0/PuestaPunto/Homebrew/homebrew.md)
+* [Homebrew (Mac)](Project0/PuestaPunto/Homebrew/homebrew.md)
 * [Visual Studio Code](Project0/PuestaPunto/VSC/VSC.md)
     * [Introducción e Instalación](Project0/PuestaPunto/VSC/01-instalacion.md)
     * [Configuración Básica](Project0/PuestaPunto/VSC/02-configuracion-basica.md)
@@ -34,18 +34,28 @@
 ## 📚 Contenido Teórico
 * [Excel](Project0/Contenido/Excel/README.md)
     * [Introducción](Project0/Contenido/Excel/Lecciones/01-introduccion.md)
-    * [Tipos Datos](Project0/Contenido/Excel/Lecciones/02-tipos-datos.md)
+    * [Celdas y Rangos](Project0/Contenido/Excel/Lecciones/02-celdas-rangos.md)
     * [Operadores](Project0/Contenido/Excel/Lecciones/03-operadores.md)
     * [Operadores Lógicos](Project0/Contenido/Excel/Lecciones/04-funciones-logicas.md)
-    * [Recuento de Datos](Project0/Contenido/Excel/Lecciones/05-recuento.md)
-    * [Funciones Matemáticas](Project0/Contenido/Excel/Lecciones/06-funciones-matematicas.md)
-    * [Condicionales](Project0/Contenido/Excel/Lecciones/07-condicionales.md)
-    * [Ejercicios](Project0/Contenido/Excel/Ejercicios/REAMDE.md)
-        * [Reto Excel](Project0/Contenido/Excel/Ejercicios/01-ejercicio.md)
-        * [Explicación Datos](Project0/Contenido/Excel/Ejercicios/02-explicacion-datos.md)
+    * [Tipos de Datos](Project0/Contenido/Excel/Lecciones/05-tipos-datos.md)
+    * [Recuento](Project0/Contenido/Excel/Lecciones/06-recuento.md)
+    * [Funciones Matemáticas](Project0/Contenido/Excel/Lecciones/07-funciones-matematicas.md)
+    * [Control Flow](Project0/Contenido/Excel/Lecciones/08-control-fllow.md)
+    * [Condicionales](Project0/Contenido/Excel/Lecciones/09-condicionales.md)
+    * [Funciones Operadores de Texto](Project0/Contenido/Excel/Lecciones/10-Funciones-operadores-texto.md)
+    * [Manipulacion de Datos](Project0/Contenido/Excel/Lecciones/11-manipulacion-datos.md)
+    * [Visualización](Project0/Contenido/Excel/Lecciones/13-Visualizacion.md)
+    * [Ejercicios](Project0/Contenido/Excel/Ejercicios/readme.md)
+        * [Reto Excel](Project0/Contenido/Excel/Ejercicios/01-explicacion-datos.md)
+        * [Explicación Datos](Project0/Contenido/Excel/Ejercicios/02-ejercicio.md)
+
+
+
 
 * [Python](Project0/Contenido/Python/README.md)
+    * [Guía Uso VSC y Jupyter Notebook](Project0/Contenido/Python/Lecciones/00-guia-uso.md)
     * [Variables](Project0/Contenido/Python/Lecciones/01-variables.md)
+    * [Strings](Project0/Contenido/Python/Lecciones/02-strings.md)
     * [Listas](Project0/Contenido/Python/Lecciones/03-listas.md)
     * [Tuplas](Project0/Contenido/Python/Lecciones/04-tuplas.md)
     * [Diccionarios](Project0/Contenido/Python/Lecciones/05-diccionarios.md)
@@ -55,6 +65,7 @@
     * [Funciones](Project0/Contenido/Python/Lecciones/09-funciones.md)
     * [Ejercicios](Project0/Contenido/Python/Ejercicios/README.md)
         * [Ejercicios Variables](Project0/Contenido/Python/Ejercicios/01-variables.md)
+        * [Ejercicios Strings](Project0/Contenido/Python/Ejercicios/02-strings.md)
         * [Ejercicios Listas](Project0/Contenido/Python/Ejercicios/03-listas.md)
         * [Ejercicios Tuplas](Project0/Contenido/Python/Ejercicios/04-tuplas.md)
         * [Ejercicios Diccionarios](Project0/Contenido/Python/Ejercicios/05-diccionarios.md)
@@ -65,6 +76,7 @@
         * [Ejercicios Bonus](Project0/Contenido/Python/Lecciones/10-ejercicios-bonus.md)
 
 * [SQL](Project0/Contenido/SQL/README.md)
+    * [Guía Dbeaver](Project0/Contenido/SQL/Lecciones/00-uso-dbeaver.md)
     * [Fundamentos de SQL](Project0/Contenido/SQL/Lecciones/01-fundamentos-sql.md)
     * [Consultas Básicas](Project0/Contenido/SQL/Lecciones/02-consultas-basicas.md)
     * [Consultas Agregación](Project0/Contenido/SQL/Lecciones/03-funciones-agregacion.md)

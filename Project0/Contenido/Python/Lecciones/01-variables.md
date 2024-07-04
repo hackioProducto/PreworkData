@@ -30,41 +30,12 @@ Descarga este Jupyter y ábrelo en VS Code.
 
 # Videos
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .video-item {
-            display: flex;
-            justify-content: flex-start; /* Asegura que los elementos se alineen al inicio */
-            align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
-            margin-bottom: 20px;
-        }
-        .video-item img {
-            width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
-            height: auto;
-            margin-right: 10px;
-        }
-        .video-description {
-            max-width: 600px; /* Ajusta el tamaño de la descripción según sea necesario */
-        }
-    </style>
-</head>
-<body>
-  <p><br>En este video veremos los tipos de datos que tenemos en Python.</br></p>
-    <div class="video-item">
-        <a href="https://vimeo.com/927429433/f9f3315bdf?share=copy">
-            <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Descripción de la Imagen 1">
-        </a>
-        <div class="video-description">
-        </div>
-    </div>
-</body>
-</html>
-
-
+#### Tipos de Datos
+<div align="center">
+  <a href="https://vimeo.com/927429433/f9f3315bdf?share=copy">
+    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Métodos listas" />
+  </a>
+</div>
 
 
 

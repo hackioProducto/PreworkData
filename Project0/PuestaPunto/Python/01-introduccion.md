@@ -1,6 +1,6 @@
 ---
 description: >-
-  Aprenderemos sobre Python, su simplicidad, extensibilidad, bibliotecas parael mundo del dato, y por qué es esencial en el manejo de datos.
+  Aprenderemos sobre Python, su simplicidad, extensibilidad, bibliotecas para el mundo del dato, y por qué es esencial en el manejo de datos.
 ---
 
 <div style="text-align: center;">
@@ -36,7 +36,7 @@ Python se ha convertido en una herramienta esencial en el mundo del dato debido 
 
    - **Scikit-Learn**: Para aprendizaje automático.
 
-2. **Eficiencia en el manejo de datos**: Las bibliotecas de Python permiten trabajar con grandes volúmenes de datos de manera eficiente, facilitando la manipulación, limpieza y análisis de datos.
+2. **Eficiencia en el manejo de datos**: Las bibliotecas de Python permiten trabajar con grandes volúmenes de datos de manera eficiente, facilitando la manipulación, limpieza y análisis de los mismos.
 
 3. **Integración con herramientas de BI y visualización**: Python se integra bien con herramientas de Business Intelligence y visualización de datos, permitiendo crear dashboards interactivos y visualizaciones avanzadas.
 

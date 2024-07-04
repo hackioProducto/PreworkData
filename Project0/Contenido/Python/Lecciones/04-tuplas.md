@@ -105,10 +105,3 @@ Descarga este Jupyter y ábrelo en VS Code.
     <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Métodos listas" />
   </a>
 </div>
-
-
-# Jupyter Ejercicios
-
-{% file src="../Ejercicios/04-tuplas.ipynb" %}
-Descarga este Jupyter y ábrelo en VS Code.
-{% endfile %}

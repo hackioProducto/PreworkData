@@ -1,6 +1,6 @@
 ---
 description: >-
-    Aprenderemosra a instalar y usar Visual Studio Code (VSC), un IDE flexible y potente, en macOS y Windows.
+    Aprenderemos a instalar y usar Visual Studio Code (VSC), un IDE flexible y potente, en macOS y Windows.
 ---
 
 <div style="text-align: center;">
@@ -10,11 +10,11 @@ description: >-
 
 # Introducción VSC
 
-**Visual Studio Code** (VSC) es un entorno de desarrollo integrado (IDE, por sus siglas en inglés) gratuito y de código abierto desarrollado por Microsoft. Es una herramienta ampliamente utilizada debido a su flexibilidad y potencia. Es decir, VSC nos va a ayudar a escribir nuestro código, independientemente del lenguaje que vayamos a usar de una forma sencilla y amigable. 
+**Visual Studio Code** (VSC) es un entorno de desarrollo integrado (IDE, por sus siglas en inglés) gratuito y de código abierto desarrollado por Microsoft. Es una herramienta ampliamente utilizada debido a su flexibilidad y potencia. Es decir, VSC nos va a ayudar a escribir nuestro código, independientemente del lenguaje que vayamos a usar, de una forma sencilla y amigable. 
 
 ## ¿Qué es un IDE?
 
-Un IDE, o Entorno de Desarrollo Integrado (del inglés, *Integrated Development Environment*), es una herramienta que proporciona un conjunto completo de características y herramientas para facilitar el desarrollo de software.Será como un "centro de tareas" para nosotros, donde podremos escribir, editar, compilar, depurar y gestionar los proyectos de manera más eficiente.
+Un IDE, o Entorno de Desarrollo Integrado (del inglés, *Integrated Development Environment*), es una herramienta que proporciona un conjunto completo de características y herramientas para facilitar el desarrollo de software. Será como un "centro de tareas" para nosotros, donde podremos escribir, editar, compilar, depurar y gestionar los proyectos de manera más eficiente.
 
 # Instalación de Visual Studio Code
 
@@ -22,19 +22,21 @@ Un IDE, o Entorno de Desarrollo Integrado (del inglés, *Integrated Development 
 
 La instalación de VSC la podemos hacer de dos formas:
 
-- A través de un descargable que encontrarás en el [siguiente](https://code.visualstudio.com/download) link. Lo único que tendrás que hacer es seguir los pasos del instalador y luego ir a tus aplicaciones donde podrás encontrar VSC
+- A través de un descargable que encontraremos en el [siguiente](https://code.visualstudio.com/download) link. Lo único que tendremos que hacer es seguir los pasos del instalador y luego ir a nuestras aplicaciones donde podremos encontrar VSC
 
-- A través de la terminal. Para eso tendrás que abrir tu terminal y escribir el siguiente comando:
+- A través de la terminal. Para eso tendremos que abrir la terminal y escribir el siguiente comando:
     
     ```bash
     brew install --cask visual-studio-code
     ```
     
-    Una vez que se haya ejecutado el código, abre tus aplicaciones y deberás tener VSC. Al abrirla por primera vez, se abrirá una ventana con el siguiente mensaje, dale a **Abrir**.
+    Una vez que se haya ejecutado el código, abrimos nuestras aplicaciones y deberemos tener VSC. Al abrirla por primera vez, se abrirá una ventana con el siguiente mensaje, le damos a **Abrir**.
+
+    ![Aviso abrir VSC](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/VSC/Captura_de_pantalla_2024-01-30_a_las_10.04.12.png?raw=true)
 
 ## Windows
 
-Instalaremos VSC a través de un descargable que encontrarás en el [siguiente](https://code.visualstudio.com/download) link. Deberás seguir todas las indicaciones del instalador. Una vez terminados todos los pasos, deberás tener VSC entre tus aplicaciones.
+Instalaremos VSC a través de un descargable que encontraremoss en el [siguiente](https://code.visualstudio.com/download) link. Deberemoss seguir todas las indicaciones del instalador. Una vez terminados todos los pasos, deberemoss tener VSC entre nuestras aplicaciones.
 
 
 

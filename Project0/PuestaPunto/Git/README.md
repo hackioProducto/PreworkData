@@ -11,7 +11,7 @@ A través de esta sección, aprenderás:
 * **Uso Básico**: Realizar operaciones básicas como clonar, añadir, commitear y push de repositorios.
 * **Trabajando con Ramas**: Crear, cambiar y fusionar ramas para trabajar de manera efectiva en diferentes características.
 
-También aprenderás a:
+También aprenderás:
 
 * **Navegación y Exploración de Repositorios**: Navegar y explorar el historial de commits y archivos en un repositorio.
 * **Flujos de Trabajo**: Diferentes flujos de trabajo en Git, como Gitflow, para manejar el desarrollo de proyectos.

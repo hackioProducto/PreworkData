@@ -10,7 +10,7 @@ description: >-
 
 # Ejercicios Consultas Básicas
 
-En este apartado, realizaréis ejercicios prácticos para manejar consultas básicas en SQL. Aprenderéis a utilizar comandos `SELECT`, `FROM`, `WHERE`, y `AS` para extraer y ordenar datos de bases de datos. 
+En este apartado, realizaréis ejercicios prácticos para manejar consultas básicas en SQL. Aprenderéis a utilizar comandos `SELECT`, `FROM`, `WHERE` y `AS` para extraer y ordenar datos de bases de datos. 
 
 # Archivo Ejercicios
 

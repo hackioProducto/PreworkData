@@ -21,7 +21,7 @@ description: >-
 
 - Nos deberá salir un mensaje similar al que vemos a continuación:
 
-    ![version](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/versionwindows.png?raw=true)
+    ![Versión de Git](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/versionwindows.png?raw=true)
 
 
 
@@ -40,7 +40,7 @@ description: >-
 
 - Nos deberá aparecer un mensaje en la terminal similar al que vemos a continuación: 
 
-    ![version](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/version.png?raw=true)
+    ![Versión de Git](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/version.png?raw=true)
 
 # Videos
 

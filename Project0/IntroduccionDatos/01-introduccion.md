@@ -1,26 +1,20 @@
----
-description: >-
-    Git es esencial para gestionar cambios en el desarrollo de software, facilitando la colaboración, seguridad, flexibilidad y escalabilidad.
----
-
-
 <div style="text-align: center;">
   <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/logo_celeste@4x.png?raw=true" alt="esquema" />
 </div>
 
 # ¿Qué es el Mundo del Dato?
 
-El "Mundo del Dato" se refiere a la colección de prácticas, tecnologías y teorías utilizadas para manejar datos de manera efectiva. En la era digital actual, los datos son generados continuamente por una variedad de fuentes, desde redes sociales hasta sensores en dispositivos IoT. Este flujo constante de datos puede ser analizado para obtener información que impulsa la innovación y mejora la toma de decisiones.
+El "Mundo del Dato" se refiere a la colección de prácticas, tecnologías y teorías utilizadas para manejar datos de manera efectiva. En la era digital actual, los datos son generados continuamente por una variedad de fuentes, desde redes sociales hasta sensores en dispositivos IoT (Internet of things). Este flujo constante de datos puede ser analizado para obtener información que impulsa la innovación y mejora la toma de decisiones.
 
 # Componentes Clave del Ecosistema de Datos
 
 ## Recopilación de Datos
 
-La recopilación de datos es el primer y fundamental paso en el análisis y la ciencia de datos. Consiste en obtener datos de diversas fuentes para luego procesarlos y analizarlos con el fin de extraer información valiosa. Esta etapa es crucial porque la calidad del análisis depende en gran medida de la calidad y la relevancia de los datos recopilados.
+La recopilación de datos es el primer y fundamental paso en el análisis y la ciencia de datos. Consiste en obtener datos de diversas fuentes para luego procesarlos y analizarlos con el fin de extraer información valiosa. Esta etapa es crucial porque la calidad del análisis depende en gran medida de la naturaleza y la relevancia de los datos recopilados.
 
 Los datos pueden ser recolectados de múltiples fuentes, que incluyen:
 
-- **Sistemas Internos**: Estos son sistemas de la propia organización que contienen datos operacionales y de gestión. Algunos de los m´sa importantes son:
+- **Sistemas Internos**: Estos son sistemas de la propia organización que contienen datos operacionales y de gestión. Algunos de los más importantes son:
 
   - **ERP (Enterprise Resource Planning)**: Sistemas que integran todas las funciones de una empresa, como finanzas, recursos humanos, y manufactura.
 
@@ -37,13 +31,13 @@ Los datos pueden ser recolectados de múltiples fuentes, que incluyen:
 
 Los métodos para recopilar datos pueden variar dependiendo de la fuente y la naturaleza del dato:
 
-- APIs (*Application Programming Interfaces*): Son interfaces que permiten a diferentes sistemas de software interactuar entre sí y compartir datos. Por ejemplo, utilizar la API de Twitter para recolectar tweets relacionados con una palabra clave específica.
+- **APIs** (*Application Programming Interfaces*): Son interfaces que permiten a diferentes sistemas de software interactuar entre sí y compartir datos. Por ejemplo, utilizar la API de Twitter para recolectar tweets relacionados con una palabra clave específica.
 
-- Bases de Datos: Almacenes de datos estructurados donde la información se organiza en tablas con filas y columnas. Un ejemplo común podría ser etilizar SQL para extraer datos de ventas de una base de datos MySQL.
+- **Bases de Datos**: Almacenes de datos estructurados donde la información se organiza en tablas con filas y columnas. Un ejemplo común podría ser utilizar SQL para extraer datos de ventas de una base de datos MySQL.
 
-- Encuestas: Son herramientas diseñadas para recopilar información de un grupo específico de personas. Por ejemplo, realizar una encuesta en línea para recoger opiniones de los clientes sobre un nuevo producto.
+- **Encuestas**: Son herramientas diseñadas para recopilar información de un grupo específico de personas. Por ejemplo, realizar una encuesta en línea para recoger opiniones de los clientes sobre un nuevo producto.
 
-- *Web scraping*: Se trata de una técnica de extracción de datos de sitios web automatizando la navegación y la extracción de contenido.Ejemplo, utilizar Python para extraer precios de productos de un sitio web de comercio electrónico.
+- **Web scraping**: Se trata de una técnica de extracción de datos de sitios web automatizando la navegación y la extracción de contenido. Por ejemplo, utilizar Python para extraer precios de productos de un sitio web de comercio electrónico.
 
 Algunos consejos para realizar una buena recolección de datos son: 
 
@@ -64,7 +58,7 @@ El almacenamiento de datos es una parte crucial del manejo de la información en
 
 - **Bases de datos NoSQL**: Son sistemas de almacenamiento de datos diseñados para manejar datos no estructurados o semiestructurados. No siguen el modelo de tabla de las bases de datos relacionales y son más flexibles en la estructura de los datos. Se utilizan comúnmente en aplicaciones que requieren escalabilidad y manejan grandes volúmenes de datos. Por ejemplo, una aplicación de redes sociales usa MongoDB para almacenar perfiles de usuarios, publicaciones, y comentarios, permitiendo la adición de campos y estructura de datos sin necesidad de modificar el esquema.
 
-- **Almacenes de Datos (*Data Warehouses*)**: Son sistemas optimizados para consultas analíticas y generación de informes. Integran datos de múltiples fuentes para proporcionar una vista consolidada y permiten el análisis de grandes volúmenes de datos históricos. Ejemplo, una empresa de retail utiliza Google BigQuery para almacenar y analizar datos de ventas de diferentes tiendas y canales online, facilitando la creación de informes de rendimiento y la identificación de tendencias de mercado.
+- **Almacenes de Datos (*Data Warehouses*)**: Son sistemas optimizados para consultas analíticas y generación de informes. Integran datos de múltiples fuentes para proporcionar una vista consolidada y permiten el análisis de grandes volúmenes de datos históricos. Por ejemplo, una empresa de retail utiliza Google BigQuery para almacenar y analizar datos de ventas de diferentes tiendas y canales online, facilitando la creación de informes de rendimiento y la identificación de tendencias de mercado.
 
 - **Data Lakes**: Son sistemas de almacenamiento que permiten guardar datos en su forma cruda, estructurada, semi-estructurada, o no estructurada. Ofrecen una gran flexibilidad y se utilizan para almacenar grandes volúmenes de datos que pueden ser procesados y analizados posteriormente. Por ejemplo, una empresa de análisis de mercado utiliza un data lake en Amazon S3 para almacenar datos históricos de ventas, datos de redes sociales, y datos demográficos, lo que permite realizar análisis complejos y generar predicciones sobre tendencias de mercado.
 
@@ -73,7 +67,7 @@ El almacenamiento de datos es una parte crucial del manejo de la información en
 
 El procesamiento de datos es una etapa crucial en el ciclo de vida de la ciencia de datos, donde los datos brutos se convierten en información valiosa a través de diversas técnicas y herramientas. Dependiendo de la naturaleza y el volumen de los datos, así como de los requisitos de análisis, existen diferentes enfoques para el procesamiento de datos. Estos incluyen ETL (Extract, Transform, Load), procesamiento en tiempo real, y procesamiento en lotes.
 
-- ***ETL (*Extract, Transform, Load**)**: Es un proceso que se utiliza para recopilar datos de múltiples fuentes, transformarlos en un formato adecuado para el análisis, y cargarlos en un sistema de almacenamiento como un almacén de datos o un data lake. Imagina que trabajamos en una empresa de retail y utilizamos un proceso ETL para integrar datos de ventas provenientes de múltiples tiendas y su sitio web en un almacén de datos centralizado. Esto permite a la empresa tener una visión consolidada de sus ventas.
+- ***ETL (*Extract, Transform, Load**)**: Es un proceso que se utiliza para recopilar datos de múltiples fuentes, transformarlos en un formato adecuado para el análisis, y cargarlos en un sistema de almacenamiento como un almacén de datos o un data lake. Imaginemos que trabajamos en una empresa de retail y utilizamos un proceso ETL para integrar datos de ventas provenientes de múltiples tiendas y su sitio web en un almacén de datos centralizado. Esto permite a la empresa tener una visión consolidada de sus ventas.
 
 - **Procesamiento en tiempo real**: Implica el análisis de datos inmediatamente después de que se generan, permitiendo la toma de decisiones y respuestas instantáneas. Es esencial para aplicaciones donde la inmediatez es crucial, como monitoreo de sistemas, detección de fraudes, y recomendaciones personalizadas. En este caso trabajamos en una empresa de comercio electrónico usando Apache Kafka para capturar clics de usuarios en tiempo real y procesarlos con Apache Flink para generar recomendaciones instantáneas.
 
@@ -105,33 +99,18 @@ Existen diversas herramientas de visualización de datos, cada una con caracter�
 
 - **matplotlib (Python)**: Es una biblioteca de Python para la creación de gráficos estáticos, animados e interactivos. Es ampliamente utilizada en la comunidad científica y de análisis de datos por su flexibilidad y potencia.
 
-- **ggplot2 (R)**: Es una biblioteca de R basada en el concepto de la gramática de gráficos. Facilita la creación de gráficos complejos y estéticamente agradables a partir de datos en R.
-
 
 
 ## Gobernanza y Seguridad de Datos
 
 La gobernanza y seguridad de datos se centra en establecer políticas, procesos, y tecnologías para manejar, proteger y garantizar la calidad de los datos dentro de una organización. A medida que las empresas recopilan y utilizan cantidades cada vez mayores de datos, la gobernanza y la seguridad se vuelven críticas para asegurar el cumplimiento normativo, la integridad de los datos y la protección contra amenazas.
 
--  **Privacidad de datos**: Se refiere a la correcta gestión y protección de los datos personales conforme a regulaciones y normas. Esto implica garantizar que los datos personales se recopilen, almacenen y utilicen de manera responsable, respetando los derechos de los individuos sobre sus datos. Las regulaciones clave son:
-
-
-    - **GDPR (Reglamento General de Protección de Datos)**: Legislación de la Unión Europea que establece directrices estrictas sobre la recopilación y procesamiento de datos personales de los residentes de la UE. Incluye derechos como el derecho al acceso, rectificación y eliminación de datos.
-
-    - **CCPA (Ley de Privacidad del Consumidor de California)**: Legislación que otorga a los residentes de California derechos sobre la información que las empresas recopilan sobre ellos, incluyendo el derecho a conocer qué datos se recopilan y a solicitar su eliminación.
+-  **Privacidad de datos**: Se refiere a la correcta gestión y protección de los datos personales conforme a regulaciones y normas. Esto implica garantizar que los datos personales se recopilen, almacenen y utilicen de manera responsable, respetando los derechos de los individuos sobre sus datos. 
 
     Por ejemplo, una empresa de comercio electrónico implementa formularios de consentimiento claros para los usuarios al recopilar datos personales, asegurando que los clientes comprendan cómo se utilizarán sus datos y dando opciones para optar por no participar en ciertas actividades de procesamiento de datos.
 
 
-- **Seguridad de datos**: Se refiere a las medidas y prácticas implementadas para proteger los datos contra accesos no autorizados, divulgaciones, alteraciones y destrucciones. Esto incluye la protección contra amenazas tanto internas como externas, asegurando que solo las personas autorizadas tengan acceso a la información. Los controles de seguridad son:
-
-    - **Cifrado**: Utilización de técnicas de cifrado para proteger los datos en tránsito y en reposo.
-
-    - **Autenticación y Autorización**: Implementar procesos robustos para verificar la identidad de los usuarios y definir qué recursos pueden acceder.
-
-    - **Copia de Seguridad (Backup)**: Realizar copias de seguridad regulares para asegurar la recuperación de datos en caso de pérdida o corrupción.
-
-    - **Monitoreo y Detección**: Utilizar herramientas para detectar y responder a actividades sospechosas en tiempo real.
+- **Seguridad de datos**: Se refiere a las medidas y prácticas implementadas para proteger los datos contra accesos no autorizados, divulgaciones, alteraciones y destrucciones. Esto incluye la protección contra amenazas tanto internas como externas, asegurando que solo las personas autorizadas tengan acceso a la información. 
 
     Por ejemplo, una institución financiera utiliza cifrado avanzado para proteger la transmisión de datos sensibles de clientes a través de redes, implementa autenticación de dos factores para acceder a sistemas críticos y realiza auditorías de seguridad regulares para identificar y mitigar vulnerabilidades.
 
@@ -180,11 +159,11 @@ La gobernanza y seguridad de datos se centra en establecer políticas, procesos,
    - **Fraude**: Detectar actividades fraudulentas mediante patrones de datos inusuales.
 
 
-# Qué Habilidades y Herramientas Debe Tener un Analista o Científico de Datos?
+# ¿Qué Habilidades y Herramientas Debe Tener un Analista o Científico de Datos?
 
 - **Habilidades Técnicas**
 
-   - **Programación**: Conocimiento de lenguajes como Python y R para análisis y modelado.
+   - **Programación**: Conocimiento de lenguajes como Python para análisis y modelado.
 
    - **Bases de Datos**: Capacidad para trabajar con SQL y sistemas NoSQL.
 

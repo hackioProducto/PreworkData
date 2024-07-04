@@ -21,3 +21,14 @@ Las funciones de recuento se utilizan para contar celdas, números, o valores es
 | `CONTAR.SI`           | Cuenta el número de celdas que cumplen un criterio.      | `=CONTAR.SI(rango; criterio)`              | `=CONTAR.SI(A1:A10; ">10")` (Cuenta celdas > 10 en A1:A10) |
 | `CONTAR.SI.CONJUNTO`  | Cuenta celdas que cumplen múltiples criterios.           | `=CONTAR.SI.CONJUNTO(rango1; crit1; ... )` | `=CONTAR.SI.CONJUNTO(A1:A10; ">10", B1:B10; "<5")` (Cuenta celdas > 10 en A1:A10 y < 5 en B1:B10) |
 | `CONTAR.VALOR`        | Devuelve la cantidad de celdas no vacías en un rango.    | `=CONTAR.VALOR(rango)`                     | `=CONTAR.VALOR(A1:A10)` (Cuenta celdas no vacías en A1:A10)|
+
+
+
+# Videos
+
+#### Recuento de Datos
+<div align="center">
+  <a href="https://vimeo.com/969875224/176b2f511f?share=copy">
+    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Métodos listas" />
+  </a>
+</div>

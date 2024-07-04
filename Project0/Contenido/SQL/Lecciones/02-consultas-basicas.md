@@ -1,6 +1,6 @@
 ---
 description: >-
-  Aprenderemos consultas básicas en SQL para recuperar y manipular datos: `SELECT` para columnas, `FROM` para tablas, `WHERE` para filtros, y `AS` para renombrar.
+  Aprenderemos consultas básicas en SQL para recuperar y manipular datos: SELECT para columnas, FROM para tablas, WHERE para filtros, y AS para renombrar.
 ---
 
 <div style="text-align: center;">
@@ -24,7 +24,7 @@ Las consultas básicas de SQL que veremos son:
 
 ## `SELECT` y `FROM`
 
-La cláusula `SELECT`  se utiliza para seleccionar columnas específicas de una o varias tablas. Permite recuperar y visualizar los datos que cumplen ciertos criterios en una consulta.
+La cláusula `SELECT` se utiliza para seleccionar columnas específicas de una o varias tablas. Permite recuperar y visualizar los datos que cumplen ciertos criterios en una consulta.
 
 Por ejemplo, si tenemos una tabla llamada "Clientes" con columnas como "Nombre", "Apellido" y "Edad", podemos usar el comando `SELECT`  para seleccionar solo los nombres y apellidos de los clientes:
 
@@ -32,7 +32,18 @@ La cláusula `FROM` en SQL se utiliza para indicar la tabla o tablas de las cual
 
 En una consulta básica, la cláusula `FROM` se utiliza junto con la cláusula `SELECT` para seleccionar columnas específicas de una o varias tablas. Por ejemplo, si tenemos una tabla llamada "Clientes" y queremos seleccionar solo los nombres y apellidos de los clientes, usaríamos la cláusula `FROM` para indicar la tabla "Clientes" en la consulta:
 
-Esta query nos devolverá una tabla con los nombres y apellidos de todos los clientes en la tabla "Clientes". Pongámoslo en práctica, en este ejemplo, seleccionaremos solo los títulos de los álbumes que tenemos en la BBDD. Para eso tendremos que usar la tabla de **Album.** La query que deberemos escribir es:
+```sql
+/**
+Esta query nos devolverá una tabla con los nombres 
+y apellidos de todos los clientes en la tabla "Clientes"
+**/
+
+SELECT  "Nombre",
+        "Apellido"
+FROM "Clientes";
+```
+
+Pongámoslo en práctica en nuestra base de datos Chinook, en este ejemplo, seleccionaremos solo los títulos de los álbumes que tenemos en la BBDD. Para eso tendremos que usar la tabla de **Album**. La *query* que deberemos escribir es:
 
 ```sql
 -- Esta query nos devolverá la columna "Title" de la tabla "Album" 
@@ -40,12 +51,12 @@ SELECT "Title"
 FROM "Album";
 ```
 
-El resultado obtenido de esta query es:
+El resultado obtenido de esta *query* es:
 
-![6 primeros resultados de la query donde seleccionamos la columna “Title” de la tabla “Album” ](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen1.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen1.png?raw=true)
 
 
-Poniendo otro ejemplo, si quisiéramos saber el nombre, apellido y la ciudad de los clientes que tenemos en la BBDD solo tendríamos que incluir en el SELECT el nombre de todas las columnas que queremos separadas por comas. La query quedaría de la siguiente forma: 
+Poniendo otro ejemplo, si quisiéramos saber el nombre, apellido y la ciudad de los clientes que tenemos en la BBDD solo tendríamos que incluir en el `SELECT` el nombre de todas las columnas que queremos separadas por comas. La *query* quedaría de la siguiente forma: 
 
 ```sql
 /**
@@ -53,13 +64,15 @@ En esta query estamos seleccionando las columnas "FirstName", "LastName"
 y "City" de la tabla "Customer"
 **/
 
-SELECT "FirstName" , "LastName" , "City"  
+SELECT  "FirstName" , 
+        "LastName" , 
+        "City"  
 FROM "Customer";
 ```
 
-![6 primeros resultados de la query donde seleccionamos el nombre (FirstName), apellido (LastName) y ciudad (City) de la tabla “Customer”](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen2.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen2.png?raw=true)
 
-En ocasiones, podemos estar interesados en seleccionar todas las columnas de una tabla, para eso tendremos que usar un `*` en el SELECT de la siguiente forma:
+En ocasiones, podemos estar interesados en seleccionar todas las columnas de una tabla, para eso tendremos que usar un `*` en el `SELECT` de la siguiente forma:
 
 ```sql
 -- En esta query estamos seleccionando todas las columnas de la tabla "Customer"
@@ -67,7 +80,7 @@ SELECT *
 FROM "InvoiceLine";
 ```
 
-![6 primeros resultados de la query donde seleccionamos todas las columnas de la tabla “InvoiceLine”](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen3.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen3.png?raw=true)
 
 
 
@@ -77,16 +90,17 @@ La cláusula `WHERE`  se utiliza para filtrar los registros de una tabla según 
 
 La cláusula `WHERE`  se puede combinar con diferentes operadores lógicos, como `=` , `<>` , `<` , `>` , `<=` , `>=`,  entre otros, para construir condiciones más complejas en las consultas.
 
-Por ejemplo, si queremos seleccionar solo los clientes con un apellido específico de una tabla "Clientes", podemos usar la cláusula WHERE de la siguiente manera:
+Por ejemplo, si queremos seleccionar solo los clientes con un apellido específico de una tabla "Clientes", podemos usar la cláusula `WHERE` de la siguiente manera:
 
 ```sql
 SELECT * FROM Clientes 
 WHERE Apellido = 'Smith';
 ```
 
-Esta query nos devolverá todos los registros de la tabla "Clientes" donde el apellido sea igual a "Smith".
+Esta *query* nos devolverá todos los registros de la tabla "Clientes" donde el apellido sea igual a "Smith".
+**Importante** si queremos usar un valor de tipo *string* dentro de la cláusula `WHERE` en DBeaver, debemos poner el valor entre comillas simples **''**.
 
-Empecemos buscando en la BBDD aquellos clientes cuyo nombre es “Frank”, solo querremos extraer el nombre, apellido, ciudad y estado.  Para eso deberemos escribir la siguiente query:
+Empecemos buscando en la BBDD aquellos clientes cuyo nombre es 'Frank', solo querremos extraer el nombre, apellido, ciudad y estado. Para eso deberemos escribir la siguiente *query*:
 
 ```sql
 /** 
@@ -95,14 +109,17 @@ tabla "Customer" filtrando solo aquellos clientes llamadados "Frank".
 NOTA: Fijaos como "Frank" va entre comillas simples, si no lo hicieremos así 
 la query nos dará error. 
 **/
-SELECT "FirstName" , "LastName" , "City" , "State"  
+SELECT "FirstName", 
+       "LastName", 
+       "City", 
+       "State"  
 FROM "Customer" 
 WHERE "FirstName" = 'Frank';
 ```
 
-![Resultados de la query donde seleccionamos el nombre (FirstName), apellido (LastName),  ciudad (City)  y estado (State) de la tabla “Customer” filtrado por aquellos clientes que se llaman “Frank”.](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen4.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen4.png?raw=true)
 
-Si quisiéramos por el contrario seleccionar aquellos clientes que no se llaman “Frank”, tendríamos que usar el operador `<>`.  La query sería: 
+Si quisiéramos por el contrario seleccionar aquellos clientes que no se llaman “Frank”, tendríamos que usar el operador `<>`.  La *query* sería: 
 
 ```sql
 /** 
@@ -114,9 +131,9 @@ FROM "Customer"
 WHERE "FirstName" <> 'Frank';
 ```
 
-![6 primeros resultados de la query donde seleccionamos el nombre (FirstName), apellido (LastName),  ciudad (City)  y estado (State) de la tabla “Customer”seleccionando solo aquellos clientes que no se llaman “Frank”](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen5.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen5.png?raw=true)
 
-Imaginemos ahora que queremos saber el nombre, precio y milisegundos de las canciones que tienen un precio mayor que 1$. En ese caso nuestra query debería ser: 
+Imaginemos ahora que queremos saber el nombre, precio y milisegundos de las canciones que tienen un precio mayor que 1$. En ese caso nuestra *query* debería ser: 
 
 ```sql
 /** 
@@ -128,7 +145,7 @@ FROM "Track"
 WHERE "UnitPrice"  > 1;
 ```
 
-![6 primeros resultados de la query donde seleccionamos el nombre  de la canción (Name), el precio (UnitPrice) y los milisegundos (Milliseconds) de aquellas canciones cuyo precio es superior a 1$. ](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen6.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen6.png?raw=true)
 
 En resumen, la sentencia `WHERE` se puede usar con operadores de comparación, los más importantes son: 
 
@@ -152,12 +169,13 @@ Por ejemplo, si quisiéramos seleccionar el nombre y apellido de los clientes  c
 En esta query estamos seleccionando aquellos clientes que son de Brasil 
 o Chile
 **/
-SELECT  "FirstName" , "LastName"  
+SELECT  "FirstName", 
+        "LastName"  
 FROM "Customer" 
 WHERE "Country"  IN ('Brazil', 'Chile');
 ```
 
-![Resultados de la query donde seleccionamos el nombre (FirstName) y apellido (LastName) de la tabla “Customer” que sean de Brasil o Chile ](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen7.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen7.png?raw=true)
 
 
 Por otro lado, si quisieramos seleccionar clientes cuyo país no sea Brasil o Chile, podemos usar la cláusula `NOT IN` de la siguiente manera:
@@ -172,23 +190,24 @@ FROM "Customer"
 WHERE "Country"  NOT IN ('Brazil', 'Chile');
 ```
 
-![6 primeros resultados de la query que selecciona el nombre (FirstName) y apellido (LastName) de la tabla “Customer” que no son de Brasil o Chile](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen8.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen8.png?raw=true)
 
 
 La sentencia `BETWEEN` se utiliza en la cláusula `WHERE` para filtrar registros en base a un rango de valores. Permite seleccionar registros cuyo valor en una columna esté dentro del rango especificado. Es importante tener en cuenta que la sentencia `BETWEEN` incluye el valor inicial pero no el valor final del rango.
 
-Por ejemplo, si queremos seleccionar las canciones cuyo precio está entre 1 y 2$, tendríamos que construir la siguiente query :
+Por ejemplo, si queremos seleccionar las canciones cuyo precio está entre 1$ y 2$, tendríamos que construir la siguiente *query* :
 
 ```sql
-SELECT "Name", "UnitPrice"  
+SELECT "Name", 
+       "UnitPrice"  
 FROM "Track" 
 WHERE "UnitPrice" BETWEEN 1 AND 2;
 ```
 
-![6 primeros resultados donde estamos extrayendo el nombre de la canciones (Name) y precio (UnitPrice) de la tabla Track cuyos precios están entre 1 y 2 dolares.](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen9.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen9.png?raw=true)
 
 
-También podemos usar el `BETWEEN` con columnas que son de tipo texto. Por ejemplo, podríamos seleccionar todas las canciones que empiezan por “A” o por “B” de la siguiente manera: 
+También podemos usar el `BETWEEN` con valores que son de tipo texto. Por ejemplo, podríamos seleccionar todas las canciones que empiezan por “A” o por “B” de la siguiente manera: 
 
 ```sql
 /**
@@ -202,7 +221,7 @@ FROM "Track"
 WHERE "Name" BETWEEN 'A 'AND 'C';
 ```
 
-![6 primeros resultados donde estamos seleccionando el nombre de la canción (Name) y precio (UnitPrice) de aquellas canciones que empiezan por “A” o por “B”](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen10.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen10.png?raw=true)
 
 
 | Operador | Descripción | Ejemplo de Código |
@@ -228,9 +247,9 @@ Hasta ahora hemos estado viendo filtrado de la información, pero usando únicam
     ![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen11.png?raw=true)
     
 
-    En esta query no obtenemos ningún resultado, esto es así porque no tenemos ningún empleado que tenga la posición de “*Sales Support Agent*” y que viva en “*Lethbridge*”. Es decir, se tienen que cumplir las dos condiciones. 
+    En esta *query* no obtenemos ningún resultado, esto es así porque no tenemos ningún empleado que tenga la posición de “*Sales Support Agent*” y que viva en “*Lethbridge*”. Es decir, se tienen que cumplir las dos condiciones. 
     
-- La sentencia `OR` se utiliza en una cláusula `WHERE` para combinar múltiples condiciones y asegurarse de que al menos una de las condiciones se cumpla. Si alguna de las condiciones separadas por `OR` es verdadera, el registro se incluirá en el resultado. Vamos a hacer una pequeña modificación a la query anterior, y en vez de poner `AND` vamos a poner `OR` y vamos a ver que es lo que pasa.
+- La sentencia `OR` se utiliza en una cláusula `WHERE` para combinar múltiples condiciones y asegurarse de que al menos una de las condiciones se cumpla. Si alguna de las condiciones separadas por `OR` es verdadera, el registro se incluirá en el resultado. Vamos a hacer una pequeña modificación a la *query* anterior, y en vez de poner `AND` vamos a poner `OR` y vamos a ver que es lo que pasa.
     
     ```sql
     /**
@@ -245,7 +264,7 @@ Hasta ahora hemos estado viendo filtrado de la información, pero usando únicam
     ![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen12.png?raw=true)
 
     
-    En este resultados si obtenemos resultados ya que, al contrario que cuando usábamos el `AND`, en este caso no se tienen que cumplir todas las condiciones. Con que se cumpla una de ellas, esa fila será seleccionada. Como consecuencia, esta query nos esta devolviendo todos aquellos empleados que están en la posición de “Sales Support Agent” o que son de “Lethbridge”. 
+    En este resultados si obtenemos resultados ya que, al contrario que cuando usábamos el `AND`, en este caso no se tienen que cumplir todas las condiciones. Con que se cumpla una de ellas, esa fila será seleccionada. Como consecuencia, esta *query* nos esta devolviendo todos aquellos empleados que están en la posición de “Sales Support Agent” o que son de “Lethbridge”. 
     
 
 ## `AS`
@@ -263,7 +282,7 @@ SELECT "FirstName" AS "Nombre", "LastName" AS "Apellido"
 FROM "Customer";
 ```
 
-![resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen13.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen13.png?raw=true)
 
 
 

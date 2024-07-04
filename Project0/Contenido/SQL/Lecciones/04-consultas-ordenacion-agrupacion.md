@@ -1,6 +1,6 @@
 ---
 description: >-
-    La sentencia `ORDER BY` ordena los resultados según un criterio, `LIMIT` restringe el nº de filas devueltas, y `OFFSET` omite filas iniciales. `GROUP BY` agrupa filas y `HAVING` filtra los grupos.
+    La sentencia ORDER BY ordena los resultados según un criterio, LIMIT restringe el número de filas devueltas, y OFFSET omite filas iniciales. GROUP BY agrupa filas y HAVING filtra los grupos.
 ---
 
 <div style="text-align: center;">
@@ -12,7 +12,7 @@ description: >-
 
 **ORDER BY**
 
-La sentencia `ORDER BY` se utiliza para ordenar los resultados de una consulta según un criterio específico. Permite especificar una o varias columnas por las cuales podemos ordenar los resultados, ya sea de forma ascendente (ASC) o descendente (DESC). Por defecto, se ordenará de forma ascendente.
+La sentencia `ORDER BY` se utiliza para ordenar los resultados de una consulta según un criterio específico. Permite especificar una o varias columnas por las cuales podemos ordenar los resultados, ya sea de forma ascendente (`ASC`) o descendente (`DESC`). Por defecto, se ordenará de forma ascendente.
 
 Imaginemos ahora que queremos ordenar la tabla de los empleados en base a su posición en la empresa de la “A” a la “Z”. La query que deberíamos escribir es:
 
@@ -44,11 +44,11 @@ ORDER BY "Title", "LastName" ;
 
 ![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen26.png?raw=true)
 
-Hasta ahora hemos estado ordenando de la “A” a la “Z” (de forma ascendente), pero ¿qué pasaría si quisiéramos ordenar de la “A” a la “Z” por la posición que ocupan los empleados y de la “Z” a la “A” (forma descendente) por el apellido? En ese caso, tendríamos que indicar de que forma queremos ordenar cada una de las columnas que especifiquemos en el `ORDER BY`.
+Hasta ahora hemos estado ordenando de la “A” a la “Z” (de forma ascendente), pero ¿qué pasaría si quisiéramos ordenar de la “A” a la “Z” por la posición que ocupan los empleados y de la “Z” a la “A” (forma descendente) por el apellido? En ese caso, tendríamos que indicar de qué forma queremos ordenar cada una de las columnas que especifiquemos en el `ORDER BY`.
 
 ```sql
 /** En esta query estamos seleccionado el nombre, apellido y posición de todos
-los empleados de la compañia, ordenando los resultados de la "A" a la "Z" por 
+los empleados de la compañía, ordenando los resultados de la "A" a la "Z" por 
 la posición y de la "Z" a la "A" por el apellido 
 **/
 SELECT "FirstName", "LastName", "Title"
@@ -56,10 +56,10 @@ FROM "Employee"
 ORDER BY "Title" ASC, "LastName" DESC ;
 ```
 
-![Resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen27.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen27.png?raw=true)
 
 
-Hasta ahora hemos visto las sentencias `WHERE` y `ORDER BY` por separado, pero nos podemos preguntar si se pueden combinar estas dos sentencias. La respuesta es que si. Imaginemos ahora que queremos basándonos en la query anterior queremos quedarnos solo con aquellos empleados que vienen de “Calgary”. Para eso lo único que tendremos que hacer es incluir el where en la query. **Este `WHERE` deberá ir encima del `ORDER BY`.**
+Hasta ahora hemos visto las sentencias `WHERE` y `ORDER BY` por separado, pero nos podemos preguntar si se pueden combinar estas dos sentencias. La respuesta es que sí. Imaginemos ahora que queremos, basándonos en la query anterior, quedarnos solo con aquellos empleados que vienen de “Calgary”. Para eso lo único que tendremos que hacer es incluir el `WHERE` en la query. **Este `WHERE` deberá ir encima del `ORDER BY`.**
 
 ```sql
 /**
@@ -90,7 +90,7 @@ SELECT "Title"
 FROM "Album";
 ```
 
-![Resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen29.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen29.png?raw=true)
 
 Si quisiéramos acortar el resultado para ver los 3 primeros resultados podríamos incluir en nuestra query la sentencia `LIMIT` de la siguiente forma. 
 
@@ -104,16 +104,16 @@ FROM "Album"
 LIMIT 3
 ```
 
-![Resultado](Ihttps://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen30.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen30.png?raw=true)
 
-Creemos ahora una query donde combinemos todas las sentencias que hemos aprendido, `SELECT` , `FROM` , `WHERE` , `ORDER BY` y `LIMIT`. En este caso vamos a crear una query que nos permita extraer el nombre, precio y compositor de las canciones que tengan in precio superior a 1$, ordenando los resultados en base a la duración de la canción de mayor y limitando el resultado a dos. 
+Creemos ahora una query donde combinemos todas las sentencias que hemos aprendido, `SELECT` , `FROM` , `WHERE` , `ORDER BY` y `LIMIT`. En este caso vamos a crear una query que nos permita extraer el nombre, precio y compositor de las canciones que tengan un precio superior a 1$, ordenando los resultados en base a la mayor duración de la canción y limitando el resultado a dos. 
 
 ```sql
 /**
 En esta query estamos seleccionando aquellas canciones que tienen un precio superior
 a 1$, ordenando los resultados en base a su duración y limitando el output a
 2 resultados. Además hemos añadido los alias para los nombres de las columnas
-usando la sentencia AS para que los nombres de las columnas sean mas intuitivos. 
+usando la sentencia AS para que los nombres de las columnas sean más intuitivos. 
 **/
 SELECT "Name" AS "Nombre Cancion", "UnitPrice" AS "Precio","Composer" AS "Compositor"
 FROM "Track"  
@@ -128,13 +128,13 @@ LIMIT 2;
 
 La cláusula `OFFSET` se utiliza junto con la cláusula `LIMIT` para especificar el número de filas que se deben omitir en el resultado de una consulta. Permite saltar un número específico de filas y comenzar a mostrar los resultados a partir de esa posición.
 
-Volvamos sobre la query anterior, donde habíamos sacado las canciones cuyo precio era superior a 1$. Ejecutemos ahora la query, pero en este caso sin incluir el limit: 
+Volvamos sobre la query anterior, donde habíamos sacado las canciones cuyo precio era superior a 1$. Ejecutemos ahora la query, pero en este caso sin incluir el `LIMIT`: 
 
 ```sql
 /**
 Estamos seleccionando las canciones que tienen un precio superior a 1$, ordenando
 los resultados de mayor a menor en base a la duración. 
-Fijaos como el primer resultado que nos devuelve la query es "Occupation /Precipice"
+Fijaos como el primer resultado que nos devuelve la query es "Occupation / Precipice"
 **/
 SELECT "Name" AS "Nombre Cancion", "UnitPrice" AS "Precio","Composer" AS "Compositor"
 FROM "Track"  
@@ -142,7 +142,7 @@ WHERE "UnitPrice" > 1
 ORDER BY "Milliseconds" DESC;
 ```
 
-![Resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen32.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen32.png?raw=true)
 
 Hagamos ahora la misma query, pero en este caso incluiremos la sentencia `OFFSET` y observemos como cambian los resultados. 
 
@@ -159,9 +159,9 @@ ORDER BY "Milliseconds" DESC
 OFFSET 2;
 ```
 
-![Captura de pantalla 2024-02-06 a las 12.06.27.png](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen33.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen33.png?raw=true)
 
-Fijaos como ahora el primer resultado ya no es "*Occupation /Precipice*" sino "*Greeting from Earth*", es decir, la que antes estaba en tercera posición. Es decir, fijaos como se han omitido los dos primeros resultados resultado de la sentencia `OFFSET`.
+Fijaos como ahora el primer resultado ya no es "*Occupation /Precipice*" sino "*Greeting from Earth*", la que antes estaba en tercera posición. Es decir, fijaos como se han omitido los dos primeros resultados resultado de la sentencia `OFFSET`.
 
 Es importante tener en cuenta que la cláusula `OFFSET` se puede utilizar en combinación con la cláusula `LIMIT` para obtener un conjunto específico de filas después de omitir un número determinado de filas. Por ejemplo, podríamos estar interesados en sacar las canciones que están entre las posiciones 6 y 10 (inclusive). Para eso, tendríamos que usar las sentencias `OFFSET` y `LIMIT`. 
 
@@ -188,7 +188,7 @@ La cláusula `GROUP BY` se utiliza para agrupar filas en base a un criterio espe
 
 Cuando usamos `GROUP BY`, especificamos una o varias columnas por las cuales queremos agrupar los resultados. Cada grupo resultante contendrá todas las filas que tengan los mismos valores en las columnas especificadas.
 
-Supongamos que queremos saber los 5 paises con más clientes que tenemos en la BBDD, tendríamos que agrupar por país y contar el número de filas que tenemos para cada uno de los países, además de ordenar los resultados de mayor a menor y limitando los resultados a 5. 
+Supongamos que queremos saber los 5 países con más clientes que tenemos en la BBDD, tendríamos que agrupar por país y contar el número de filas que tenemos para cada uno de los países, además de ordenar los resultados de mayor a menor y limitando los resultados a 5. 
 
 ```sql
 /**
@@ -208,7 +208,7 @@ LIMIT 5;
 
 **HAVING**
 
-La cláusula `HAVING` se utiliza en combinación con la cláusula `GROUP BY` para filtrar los resultados de una consulta agregada. Permite aplicar condiciones a los grupos resultantes de la cláusula `GROUP BY`.
+La cláusula `HAVING` se utiliza en combinación con la cláusula `GROUP BY` para filtrar los resultados de una consulta agregada.Permite aplicar condiciones a los grupos resultantes de la cláusula `GROUP BY`.
 
 Mientras que la cláusula `WHERE` se utiliza para filtrar filas individuales antes de que se realice la agregación, la cláusula `HAVING` se utiliza para filtrar grupos después de la agregación.
 
@@ -218,7 +218,8 @@ Imaginemos que queremos obtener los países con más de 5 clientes en nuestra ba
 /**
 En esta query estamos seleccionando el país y contando el número de clientes 
 para cada país.
-Luego, utilizamos la cláusula HAVING para filtrar los resultados y mostrar solo aquellos países que tienen más de 3 clientes.
+Luego, utilizamos la cláusula HAVING para filtrar los resultados 
+y mostrar solo aquellos países que tienen más de 3 clientes.
 Por último, estamos ordenando los resultados en base al número total de clientes
 de mayor a menor.
 **/
@@ -232,27 +233,27 @@ ORDER BY numero_total_clientes DESC;
 ![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen36.png?raw=true)
 
 
-Si nos fijamos ahora en el `HAVING` no hemos usado el alias que hemos creado en el `SELECT`.  Esto es debido al orden de ejecución en las queries. Podríamos pensar que el orden de ejecución es de arriba hacía abajo, pero la realidad es que no es así. A continuación veamos cual es el orden de ejecución de las sentencias que hemos visto hasta ahora: 
+Si nos fijamos ahora en el `HAVING`, no hemos usado el alias que hemos creado en el `SELECT`.  Esto es debido al orden de ejecución en las queries. Podríamos pensar que el orden de ejecución es de arriba hacía abajo, pero la realidad es que no es así. A continuación vemos cual es el orden de ejecución de las sentencias que hemos visto hasta ahora: 
 
 El orden de ejecución de las sentencias en PostgreSQL es el siguiente:
 
-1. FROM: Se seleccionan las tablas de donde se obtendrán los datos.
+1. `FROM`: Se seleccionan las tablas de donde se obtendrán los datos.
 
-2. WHERE: Se aplican las condiciones de filtrado a las filas individuales.
+2. `WHERE`: Se aplican las condiciones de filtrado a las filas individuales.
 
-3. GROUP BY: Se agrupan los datos en base a las columnas especificadas.
+3. `GROUP BY`: Se agrupan los datos en base a las columnas especificadas.
 
-4. HAVING: Se aplican las condiciones de filtrado a los grupos resultantes.
+4. `HAVING`: Se aplican las condiciones de filtrado a los grupos resultantes.
 
-5. SELECT: Se seleccionan las columnas a mostrar en el resultado.
+5. `SELECT`: Se seleccionan las columnas a mostrar en el resultado.
 
-6. ORDER BY: Se ordenan los resultados según el criterio especificado.
+6. `ORDER BY`: Se ordenan los resultados según el criterio especificado.
 
-7. LIMIT: Se limita la cantidad de filas del resultado a mostrar.
+7. `LIMIT`: Se limita la cantidad de filas del resultado a mostrar.
 
-8. OFFSET: Se omiten las filas iniciales del resultado.
+8. `OFFSET`: Se omiten las filas iniciales del resultado.
 
-El alias lo hemos creado en el `SELECT`, por lo que solo existirá en aquellas sentencias que se ejecutan después.  
+**Importante**: El alias lo hemos creado en el `SELECT`, por lo que solo existirá en aquellas sentencias que se ejecutan después.  
 
 # Videos
 

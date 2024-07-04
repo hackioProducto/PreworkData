@@ -13,35 +13,35 @@ description: >-
 
 Además de esto, también sirve como plataforma social donde ver proyectos de otros desarrolladores, seguir las novedades de los mismos, clonar o forkear dichos proyectos y colaborar entre usuarios en proyectos propios o ajenos.
 
-![paginaprincipal](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/pagina-principal.png?raw=true)
+![Página principal de GitHub](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/pagina-principal.png?raw=true)
 
 Los pasos que debemos seguir para crear una cuenta de GitHub son: 
 
 - Lo primero que tenemos que hacer es crearnos una cuenta en la plataforma GitHub siguiendo los pasos que nos irá indicando la propia plataforma.
 
 
-  ![Captura de Pantalla 2022-09-01 a las 11.44.46.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/cuenta-email.png?raw=true)
+  ![Creamos la cuenta de GitHub](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/cuenta-email.png?raw=true)
 
 - Una vez tengamos la cuenta y la hayamos confirmado con nuestro correo electrónico podremos ver el Dashboard de GitHub con nuestros contactos, repositorios y configuraciones varias. 
 
-  ![Captura de Pantalla 2022-09-01 a las 12.18.17.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/dashboard.png?raw=true)
+  ![Dashboard principal de GitHub](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/dashboard.png?raw=true)
 
 # Enlazando nuestro equipo a la cuenta de GitHub
 
-Ya tenemos nuestra cuenta de GitHub creada, pero nos falta un paso muy importante, y es enlazar nuestro equipo con la cuenta de GitHub para poder enlazar los repositorios remotos que creemos con los repositorios locales de nuestro equipo. Para ello lo enlazaremos a través de una clave SHH siguiendo los siguientes pasos. Para enlazar nuestro equipo a la cuenta de GitHub:
+Ya tenemos nuestra cuenta de GitHub creada, pero nos falta un paso muy importante, y es vincular nuestro equipo con la cuenta de GitHub para poder enlazar los repositorios remotos que creemos con los repositorios locales de nuestro equipo. Para ello lo asociaremos a través de una clave SHH siguiendo los siguientes pasos. Para enlazar nuestro equipo a la cuenta de GitHub:
 
 
-- Tendremos que ir a las **Settings** globales y a la sección **SSH and GPG Keys.**. Para acceder a los *settings* tendréis que a la parte superior derecha de la página de Git, donde veréis vuestro perfil (es un círculo). Deberéis hacer clic ahí y veréis algo similar a esto:
+- Tendremos que ir a las **Settings** globales y a la sección **SSH and GPG Keys.**. Para acceder a los *settings* tendremos que ir a la parte superior derecha de la página de Git, donde veremos nuestro perfil (es un círculo). Debemos hacer clic ahí y veremos algo similar a esto:
 
-  ![settings](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/settings.png?raw=true)
+  ![Settings GitHub](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/settings.png?raw=true)
 
 - Una vez estemos en esta sección veremos un botón llamado **New SSH key**, el cual nos mostrará un sencillo formulario que nos pide una clave y un nombre para dicha clave.
 
-  ![Captura de Pantalla 2022-09-01 a las 12.25.30.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/clavessh.png?raw=true)
+  ![New SSH key](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/clavessh.png?raw=true)
 
 - Haremos clic y nos aparecerá la siguiente pantalla:
 
-  ![Captura de Pantalla 2022-09-01 a las 12.30.08.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/configuracionssh.png?raw=true)
+  ![Añadir nueva SSH key](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/configuracionssh.png?raw=true)
 
 Una vez que lleguemos a este punto, los siguientes pasos dependerán del sistema operativo que tengamos. La generación de esta clave SSH para cada sistema operativo la tenemos descrita a continuación. 
 
@@ -55,7 +55,7 @@ Una vez que lleguemos a este punto, los siguientes pasos dependerán del sistema
   ```
 
 - Pulsamos enter en todas las opciones hasta que nos salga un mapa de caracteres y nos deje seguir escribiendo la terminal.
-- Tras la ejecución de este comando ejecutaremos este otro para guardar en el portapapeles el código generado:
+- Tras la ejecución del anterior comando ejecutaremos este otro para guardar en el portapapeles el código generado:
 
   ```bash
   clip < ~/.ssh/id_ed25519.pub
@@ -72,7 +72,7 @@ Una vez que lleguemos a este punto, los siguientes pasos dependerán del sistema
   ```
 
 - Pulsamos `enter` en todas las opciones hasta que nos salga un mapa de caracteres y nos deje seguir escribiendo la terminal.
-- Tras la ejecución de este comando ejecutaremos este otro para guardar en el portapapeles el código generado:
+- Tras la ejecución del anterior comando ejecutaremos este otro para guardar en el portapapeles el código generado:
 
   ```bash
   pbcopy < ~/.ssh/id_ed25519.pub
@@ -89,7 +89,7 @@ Una vez que lleguemos a este punto, los siguientes pasos dependerán del sistema
   ```
 
 - Pulsamos enter en todas las opciones hasta que nos salga un mapa de caracteres y nos deje seguir escribiendo la terminal.
-- Tras la ejecución de este comando ejecutaremos este otro para guardar en el portapapeles el código generado:
+- Tras la ejecución del anterior comando ejecutaremos este otro para guardar en el portapapeles el código generado:
 
   ```bash
   cat ~/.ssh/id_ed25519.pub
@@ -117,7 +117,7 @@ Si hemos realizado todos los pasos correctamente podremos comprobar que la conex
 
   Tendremos que escribir "yes" o "si" dependiendo del idioma que tengamos configurado en nuestra terminal y darle a `enter`. 
 
-- Si la clave digital que aparece en el segundo mensaje es la misma que hemos generado anteriormente y que aparece en la sección de nuestras claves SSH pulsaremos y o si y nos debería devolver el mensaje siguiente:
+- Si la clave digital que aparece en el segundo mensaje es la misma que hemos generado anteriormente y que aparece en la sección de nuestras claves SSH pulsaremos "y" o "si" y nos debería devolver el mensaje siguiente:
 
   ```bash
   > Hi username! You've successfully authenticated, but GitHub does not

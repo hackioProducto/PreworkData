@@ -9,19 +9,19 @@ description: >-
 
 # Introducción
 
-Una rama es una línea de desarrollo independiente. Podemos pensar en una rama como una versión paralela del código que evoluciona separadamente de la línea principal (conocida como la rama `main` o `master`). Cada rama puede contener sus propios cambios, commits y historial, lo que permite a los desarrolladores trabajar en diferentes características o correcciones de manera aislada.
+Una rama es una línea de desarrollo independiente. Podemos pensar en una rama como una versión paralela del código que evoluciona separadamente de la línea principal (conocida como la rama `main` o `master`). Cada rama puede contener sus propios cambios, commits e historial, lo que permite a los desarrolladores trabajar en diferentes características o correcciones de manera aislada.
 
 **¿Por qué son útiles las ramas en git?**
 
-- Desarrollo de nuevas funcionalidades: Las ramas permiten a los desarrolladores trabajar en nuevas características sin afectar el código estable en la rama principal. Una vez que la nueva funcionalidad está completa y probada, se puede fusionar de nuevo en la rama principal.
+- **Desarrollo de nuevas funcionalidades**: Las ramas permiten a los desarrolladores trabajar en nuevas características sin afectar al código estable en la rama principal. Una vez que la nueva funcionalidad está completa y probada, se puede fusionar de nuevo en la rama principal.
 
-- Corrección de errores: Las ramas también son útiles para corregir errores. Puedes crear una rama específica para solucionar un bug, realizar los cambios necesarios y luego fusionar esos cambios en la rama principal una vez que estén probados.
+- **Corrección de errores**: Las ramas también son útiles para corregir errores. Podemoss crear una rama específica para solucionar un bug, realizar los cambios necesarios y luego fusionar esos cambios en la rama principal una vez que estén probados.
 
-- Trabajo en paralelo: Las ramas permiten a múltiples desarrolladores trabajar en paralelo sin interferir entre sí. Cada desarrollador puede trabajar en su propia rama y luego fusionar sus cambios cuando estén listos.
+- **Trabajo en paralelo**: Las ramas permiten a múltiples desarrolladores trabajar en paralelo sin interferir entre sí. Cada desarrollador puede trabajar en su propia rama y luego fusionar sus cambios cuando estén listos.
 
-- Historial limpio y organizado: Mantener diferentes líneas de desarrollo en ramas separadas ayuda a mantener el historial de commits organizado y claro. Esto facilita la revisión del historial de cambios y la identificación de problemas.
+- **Historial limpio y organizado**: Mantener diferentes líneas de desarrollo en ramas separadas ayuda a mantener el historial de commits organizado y claro. Esto facilita la revisión del historial de cambios y la identificación de problemas.
 
-- Experimentación y prototipos: Las ramas permiten a los desarrolladores experimentar con nuevas ideas o prototipos sin riesgo de romper el código principal. Si el experimento no funciona, simplemente se descarta la rama sin afectar el resto del proyecto.
+- **Experimentación y prototipos**: Las ramas permiten a los desarrolladores experimentar con nuevas ideas o prototipos sin riesgo de romper el código principal. Si el experimento no funciona, simplemente se descarta la rama sin afectar el resto del proyecto.
 
 
 # Crear Nueva Rama Local
@@ -90,11 +90,18 @@ Fusionar una rama en Git es el proceso de integrar los cambios realizados en una
      git checkout main
      ```
 
+
+
+
 - **Fusionar la rama de origen**: Fusionamos los cambios de la rama de origen (por ejemplo, `feature-branch`) en la rama de destino:
 
      ```bash
      git merge feature-branch
      ```
+
+
+![Funcionamiento de ramas](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Git/ramas_github.png?raw=true)
+
 
 # Videos
 

@@ -97,3 +97,31 @@ Pongamos dos ejemplos de como podemos usar Excel como científicos o analistas d
 - Seleccionamos "Guardar" en el menú desplegable. Esto guardará los cambios en el archivo actual.
 
 
+# Videos
+
+#### Introducción 
+<div align="center">
+  <a href="https://vimeo.com/969892346/a736ab13b8?share=copy">
+    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Métodos listas" />
+  </a>
+</div>
+
+
+#### Introducción entorno excel
+
+<div align="center">
+  <a href="https://vimeo.com/969980184/af218c6334?share=copy">
+    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Métodos listas" />
+  </a>
+</div>
+
+#### Introducción entorno excel
+
+<div align="center">
+  <a href="https://vimeo.com/969794947/1a34d43863?share=copy">
+    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Métodos listas" />
+  </a>
+</div>
+
+
+

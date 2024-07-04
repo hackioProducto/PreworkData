@@ -7,7 +7,6 @@ description: >-
   <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/logo_celeste@4x.png?raw=true" alt="logo hack(io)" />
 </div>
 
-
 # Qué son las sentencias de control y sus características
 
 Las **sentencias de control** en Python permiten dirigir el flujo de ejecución del programa según condiciones específicas o repetir bloques de código múltiples veces. En este resumen, veremos dos tipos principales: condicionales y bucles `while`.
@@ -120,8 +119,3 @@ Descarga este Jupyter y ábrelo en VS Code.
   </a>
 </div>
 
-# Jupyter Ejercicios
-
-{% file src="../Ejercicios/07-sentencias-control.ipynb" %}
-Descarga este Jupyter y ábrelo en VS Code para practicar.
-{% endfile %}

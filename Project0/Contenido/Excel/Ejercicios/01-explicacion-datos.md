@@ -81,17 +81,5 @@ Esta tabla incluye las siguientes columnas:
 
 - `Ganancia Bruta`: Ingresos brutos de este plato.
 
-- P`orcentaje de Ganancia`: Porcentaje de ganancia sobre el costo.
-
-# Metodología de Generación de Datos
-
-Los datos fueron generados utilizando Python con la biblioteca Pandas y Numpy para simular realismo en las operaciones de un restaurante típico. La aleatoriedad en la asignación de mesas, platos, y tiempos está diseñada para reflejar la variabilidad natural en un entorno de restaurante real.
-
-# Supuestos Clave
-
-- Los tiempos de llegada y salida están distribuidos uniformemente a lo largo del día operativo del restaurante.
-
-- Cada cliente puede ordenar entre 1 y 4 platos.
-
-- Los precios y costos de los platos son constantes y están predefinidos para simplificar la simulación.
+- `Porcentaje de Ganancia`: Porcentaje de ganancia sobre el costo.
 

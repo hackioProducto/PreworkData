@@ -1,6 +1,6 @@
 ---
 description: >-
-  En esta sección aprenderemos que es Homebrew y como instalarlo en nuestros ordenadores. SOLO PARA USUARIOS MAC
+  En esta sección aprenderemos qué es la terminal. Una interfaz de línea de comandos que permite a los usuarios interactuar directamente con el sistema operativo.
 ---
 
 <div style="text-align: center;">
@@ -9,19 +9,19 @@ description: >-
 
 
 
-‼️ **NOTA ANTES DE EMPEZAR** ‼️ Los alumnos que tengan ordenador con **sistema operativo de Windows** les recomendamos instalarse Git Bash. Para su instalación deberéis seguir los siguientes pasos: 
+⚠ **NOTA ANTES DE EMPEZAR** Los alumnos que tengan ordenador con **sistema operativo de Windows** les recomendamos instalarse Git Bash. Para su instalación deberéis seguir los siguientes pasos: 
 
-- Ir la [página oficial](https://git-scm.com/downloads) de Git Bash y descargar el ejecutable.
+- Vamos la [página oficial](https://git-scm.com/downloads) de Git Bash y descargamos el ejecutable.
 
-- Una vez descargado, abre el ejecutable y sigue los pasos para su instalación.
+- Una vez descargado, abrimos el ejecutable y siguimos los pasos para su instalación.
 
-- Por último, para confirmar que la instalación ocurrió con éxito, busca la aplicación Git Bash en tu ordenador.
+- Por último, para confirmar que la instalación ocurrió con éxito, buscamos la aplicación Git Bash en nuestro ordenador.
 
 # Fundamentos de la Terminal
 
 - **Terminal:** Es una interfaz de línea de comandos que nos permite interactuar con el sistema operativo. En lugar de utilizar la interfaz gráfica de usuario (GUI) con ventas y elementos visuales, la terminal proporciona un entorno basado en texto donde ingresaremos comandos para realizar ciertas acciones.  Es decir, hasta ahora utilizábamos la interfaz gráfica para trabajar con el ordenador haciendo clic en carpetas y archivos. Ahora utilizaremos la terminal a través de unos comandos para realizar todas estas acciones.
 
-- **Bash (acrónimo de *Bourne Again Shell*)**: Es un intérprete de comandos y un lenguaje de *scripting* que se utiliza en sistemas operativos Unix y Linux. Es decir, será nuestro asistente personal, que nos permitirá dar instrucciones especificas a través de la terminal para llevar a cabo una acciones.
+- **Bash (acrónimo de *Bourne Again Shell*)**: Es un intérprete de comandos y un lenguaje de *scripting* que se utiliza en sistemas operativos Unix y Linux. Es decir, será nuestro asistente personal, que nos permitirá dar instrucciones especificas a través de la terminal para llevar a cabo diferentes acciones.
 
 #### Video Fundamentos de la Terminal
 
@@ -104,7 +104,7 @@ description: >-
 
 - `file`: muestra el tipo del archivo.
 
-- `cp`(*copy*): copiar carpetas y archivos.
+- `cp`(*copy*): copia carpetas y archivos.
     
     ```bash
     # copia el contenido del archivo lorem al archivo lorem2
@@ -183,7 +183,7 @@ description: >-
 
 - `grep`: busca patrones dentro de un archivo.
 
-- `*` (comodín): indica cualquier cosa
+- `*` (comodín): indica cualquier cosa.
 
 ## Gestión de procesos
 
@@ -202,7 +202,7 @@ Los alias  son abreviaturas personalizadas para comandos largos, lo que permite 
     ```
     
 
-⚠️ Después de crear el alias debemos reiniciar la terminal y ya podremos usarlos. 
+⚠️ **Después de crear el alias debemos reiniciar la terminal y ya podremos usarlos.**
 
 #### Video Búsqueda de Ficheros, Gestión de Procesos y Creación de Alias
 
@@ -212,21 +212,21 @@ Los alias  son abreviaturas personalizadas para comandos largos, lo que permite 
 </a>
 </div> 
 
-# Cambiar aspecto de la Terminal
+# Cambiar el aspecto de la Terminal
 
 En el caso de que usemos Git Bash, no podremos configurar *oh-my-zhs*. En el caso de Mac deberéis seguir los siguientes pasos: 
 
-- Para cambiar el aspecto de la terminal lo primero que deberemos hacer es instalar oh-my-zsh. Para eso, deberéis dirigiros a la [siguiente](https://ohmyz.sh/#install) página web y hacer clic en el botón de **Install oh-my-zsh.**
+- Para cambiar el aspecto de la terminal lo primero que deberemos hacer es instalar oh-my-zsh. Para eso, deberemos dirigirnos a la [siguiente](https://ohmyz.sh/#install) página web y hacer clic en el botón de **Install oh-my-zsh.**
 
-![paginaprincipal](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Terminal/pagina_principal.png?raw=true)
+![Página oh-my-zsh](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Terminal/pagina_principal.png?raw=true)
 
-- A continuación veréis por pantalla un código similar a el que vemos a continuación. Deberéis copiarlo y pegarlo en vuestra terminal.
+- A continuación veremos por pantalla un código similar a el que vemos a continuación. Deberemos copiarlo y pegarlo en la terminal.
     
-    ![codigo](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Terminal/codigoinstalacion.png?raw=true)
+    ![Código instalación oh-my-zsh](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Terminal/codigoinstalacion.png?raw=true)
     
-- Una vez se haya terminado el proceso de instalación veréis en la terminal el siguiente mensaje. Si vemos esto en pantalla es que la instalación a ocurrido con éxito.
+- Una vez se haya terminado el proceso de instalación veremos en la terminal el siguiente mensaje. Si vemos esto en pantalla es que la instalación a ocurrido con éxito.
     
-    ![terminal](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Terminal/terminal.png?raw=true)
+    ![Mensaje de éxito en la instalación](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Terminal/terminal.png?raw=true)
     
 
 - Para cambiar el tema de la terminal deberemos ir a la [siguiente](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) página web, donde encontraremos diversos temas que podremos usar en nuestra terminal.
@@ -247,7 +247,9 @@ En el caso de que usemos Git Bash, no podremos configurar *oh-my-zhs*. En el cas
     ![zsh_visual](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Terminal/tema.png?raw=true)
     
 
-- En ese documento, deberemos buscar la variable **ZSH_THEME.** En el caso de la imagen esta en la linea 11 y pone **ZSH_THEME=”src”.** Entre las comillas deberemos poner el tema que más nos guste.# Videos
+- En ese documento, deberemos buscar la variable **ZSH_THEME.** En el caso de la imagen esta en la linea 11 y pone **ZSH_THEME=”src”.** Entre las comillas deberemos poner el tema que más nos guste.
+
+# Videos
 
 
 #### Video Cambio Aspecto Terminal

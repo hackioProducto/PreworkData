@@ -1,6 +1,6 @@
 ---
 description: >-
-   En este apartado tendréis el enunciado de los ejercicios de Excel y la descripción del conjunto de datos que usaremos para prácticar. 
+   En este apartado tendréis el enunciado de los ejercicios de Excel y la descripción del conjunto de datos que usaremos para practicar. 
 ---
 
 <div style="text-align: center;">

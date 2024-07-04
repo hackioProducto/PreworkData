@@ -69,23 +69,6 @@ Los operadores de comparación se utilizan para comparar dos valores. El resulta
     =A1 <= B1
     ```
 
-# Operadores Lógicos
-
-Los operadores lógicos se utilizan para combinar varias condiciones o para invertir el resultado de una condición:
-
-- **= Y() / =AND()**: Devuelve VERDADERO si todas las condiciones son verdaderas.
-    ```excel
-    =Y(A1 > B1, A1 < C1)
-    ```
-
-- **=O() / =OR()**: Devuelve VERDADERO si al menos una de las condiciones es verdadera.
-    ```excel
-    =O(A1 > B1)
-    ```
-- **=NO() / NOT()**: Invierte el resultado de una condición.
-    ```excel
-    =NO(A1 > B1)
-    ```
 Es import
 # Operadores de Referencia
 
@@ -99,3 +82,14 @@ Los operadores de referencia se utilizan para referirse a rangos de celdas:
     ```excel
     =SUMA(A1:A10; C1:C10)
     ```
+
+
+
+# Videos
+
+#### Operadores 
+<div align="center">
+  <a href="https://vimeo.com/969893211/8fc4c534ae?share=copy">
+    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Métodos listas" />
+  </a>
+</div>

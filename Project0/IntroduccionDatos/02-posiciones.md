@@ -8,7 +8,7 @@ El campo del análisis de datos es diverso y ofrece una variedad de roles que se
 
 - **Analista de Datos**: Se ocupa de recopilar, procesar y realizar análisis estadísticos de los datos. Crear informes y visualizaciones para comunicar hallazgos. Las principales herramientas que usará son Excel, SQL, herramientas de visualización (como Tableau o Power BI).
 
-- **Científico de Datos**: Se ocupa de desarrollar modelos predictivos y algoritmos de *machine learning* para extraer *insights* de los datos Usara la programación (Python, R), *machine learning*, estadística avanzada.
+- **Científico de Datos**: Se ocupa de desarrollar modelos predictivos y algoritmos de *machine learning* para extraer *insights* de los datos. Usará la programación (Python, R), *machine learning*, estadística avanzada.
 
 - **Ingeniero de Datos**: Se ocupa de diseñar y construir infraestructuras de datos, asegurar la integración y la gestión de grandes volúmenes de datos. Las principales herramientas que usará son SQL, sistemas de almacenamiento de datos, herramientas de big data (Hadoop, Spark).
 

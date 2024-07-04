@@ -1,6 +1,6 @@
 ---
 description: >-
-    Aprenderemos a utilizar Excel en análisis de datos mediante prácticas de organización, fórmulas, validación, automatización y visualización. 
+    Aprenderemos a utilizar los elementos basicos de Excel en análisis de datos mediante prácticas de organización, fórmulas, validación y visualización. 
 ---
 
 <div style="text-align: center;">

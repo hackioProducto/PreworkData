@@ -14,29 +14,29 @@ Las consultas de agregación son utilizadas para realizar operaciones matemátic
 Algunas de las funciones de agregación más comunes en SQL son:
 
 - **`MIN`** : Devuelve el valor mínimo en una columna. Por ejemplo, podemos usar `MIN`  para obtener el cliente más joven en una tabla de clientes.
-- **`MAX`** : Devuelve el valor máximo en una columna. Por ejemplo, Podemos usar `MAX`  para obtener el producto más caro en una tabla de productos.
+- **`MAX`** : Devuelve el valor máximo en una columna. Por ejemplo, podemos usar `MAX`  para obtener el producto más caro en una tabla de productos.
 - **`SUM`** : Calcula la suma de los valores en una columna numérica. Podemos usar `SUM`  para obtener el total de ventas en una tabla de transacciones.
-- `**COUNT**` : Cuenta el número de filas en una tabla o el número de valores no nulos en una columna. Por ejemplo, puedes usar COUNT para contar el número de clientes en una tabla de clientes.
-- **`AVG`** : Calcula el promedio de los valores en una columna numérica.  Usaremos `AVG`  para obtener el promedio de calificaciones en una tabla de estudiantes.
+- **`COUNT`** : Cuenta el número de filas en una tabla o el número de valores no nulos en una columna. Por ejemplo, puedes usar `COUNT` para contar el número de clientes en una tabla de clientes.
+- **`AVG`** : Calcula el promedio de los valores en una columna numérica. Por ejemplo, usando `AVG` podemos obtener el promedio de calificaciones en una tabla de estudiantes.
 - **`STDDEV`** : Calcula la desviación estándar de los valores en una columna numérica. Podemos usar `STDDEV`  para analizar la variabilidad de los precios en una tabla de productos.
 - **`VARIANCE`** : Calcula la varianza de los valores en una columna numérica. Utilizaremos `VARIANCE`  para medir la dispersión de los ingresos en una tabla de ventas.
 - **`CONCAT`** : Concatena dos o más cadenas de texto en una columna. Por ejemplo, podemos usar `CONCAT`  para combinar el nombre y apellido en una tabla de clientes.
 
 **MIN**
 
-La función `MIN` se utiliza para devolver el valor mínimo de una columna en una tabla. Puede ser útil cuando queremos encontrar el valor más bajo de una cierta columna, como la edad mínima de los clientes o el precio mínimo de un producto. Por ejemplo, podemos estar interesados en saber que canción es la que tiene menor duración. 
+La función `MIN` se utiliza para devolver el valor mínimo de una columna en una tabla. Puede ser útil cuando queremos encontrar el valor más bajo de una cierta columna, como la edad mínima de los clientes o el precio mínimo de un producto. Por ejemplo, podemos estar interesados en saber qué canción es la que tiene menor duración. 
 
 ```sql
 /** En esta query estamos extrayendo el valor mínimo de la columna "Milliseconds"
-combinandolo con la sentencias AS para darle un alias a la columna
+combinándolo con la sentencias AS para darle un alias a la columna
 **/
 SELECT MIN("Milliseconds") AS minimo_duración
 FROM "Track";
 ```
 
-![Captura de pantalla 2024-02-07 a las 16.36.45.png](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen14.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen14.png?raw=true)
 
-Esta query nos podría ser interesante, pero la verdad es que nos gustaría saber que canción es la que tiene una menor duración. Usando la lógica de los aprendido hasta ahora, solo tendremos que añadir en el `SELECT` la columna de “*Name”.* 
+Esta query nos podría ser interesante, pero la verdad es que nos gustaría saber qué canción es la que tiene una menor duración. Usando la lógica de los aprendido hasta ahora, solo tendremos que añadir en el `SELECT` la columna de “Name”. 
 
 
 ```sql
@@ -44,9 +44,9 @@ SELECT MIN("Milliseconds"), "Name"
 FROM "Track" ;
 ```
 
-![Captura de pantalla 2024-02-06 a las 13.51.20.png](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen15.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen15.png?raw=true)
 
-El error "SQL Error [42803]" se produce porque estamos utilizando la función de agregación `MIN` para obtener el valor mínimo de la columna "Milliseconds", pero también estamos seleccionando la columna "Name" en la misma consulta sin utilizar una función de agregación o incluirlo en la cláusula `GROUP BY`.
+El error *"SQL Error [42803]"* se produce porque estamos utilizando la función de agregación `MIN` para obtener el valor mínimo de la columna "Milliseconds", pero también estamos seleccionando la columna "Name" en la misma consulta sin utilizar una función de agregación o incluirlo en la cláusula `GROUP BY`.
 
 Cuando utilizamos una función de agregación, todas las columnas que no están siendo agregadas deben ser incluidas en la cláusula `GROUP BY` o ser utilizadas en otra función de agregación.
 
@@ -54,7 +54,7 @@ Cuando utilizamos una función de agregación, todas las columnas que no están 
 
 La función `MAX`  se utiliza para obtener el valor máximo de una columna en una tabla. Puede ser útil cuando queremos encontrar el valor más alto de una cierta columna, como la edad máxima de los clientes o el precio máximo de un producto.
 
-Igual que en el ejemplo anterior, podemos sacar que canción es la que tiene la duración más larga usando la sentencia `MAX`. 
+Igual que en el ejemplo anterior, podemos sacar qué canción es la que tiene la duración más larga usando la sentencia `MAX`. 
 
 ```sql
 -- En esta query estamos extrayendo el valor máximo de la columna "Milliseconds"
@@ -62,13 +62,13 @@ SELECT MAX("Milliseconds") AS maximo_duracion
 FROM "Track";
 ```
 
-![Captura de pantalla 2024-02-07 a las 16.37.20.png](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen16.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen16.png?raw=true)
 
 **COUNT**
 
 La sentencia `COUNT`  se utiliza para contar el número de filas en una tabla o el número de valores no nulos en una columna específica. Puede ser útil para obtener el recuento total de registros en una tabla o para realizar recuentos específicos en columnas particulares.
 
-Veamos algunos ejemplos de como podríamos usar esta sentencia:
+Veamos algunos ejemplos de cómo podríamos usar esta sentencia:
 
 - Contar el número total de registros en una tabla. Imaginamos que queremos saber el número total de facturas que hemos emitido o el número de albumes que hay en la BBDD, las queries que podríamos construir son:
     
@@ -79,7 +79,11 @@ Veamos algunos ejemplos de como podríamos usar esta sentencia:
     **/
     SELECT COUNT("InvoiceId")  
     FROM "Invoice";
+    ```
+
+  ![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen16.1.png?raw=true)
     
+    ```sql
     /**
     En esta query estamos contando el número total de registros de la tabla "Albúm"
     En este caso, usamos el asteristo para contar todas las filas de la tabla sin 
@@ -88,8 +92,10 @@ Veamos algunos ejemplos de como podríamos usar esta sentencia:
     SELECT COUNT(*) 
     FROM "Album";
     ```
-    
-- Contar el número de valores únicos en una columna. Hay en otras ocasiones que no nos interesa calcular el numero de filas que tenemos en una tabla, sino que queremos saber el numero de valores únicos que tenemos en una columna dada. Imaginemos ahora que queremos saber cuántas nacionalidades diferentes tenemos entre nuestros clientes.
+
+  ![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen16.2.png?raw=true)
+  
+- Contar el número de valores únicos en una columna. Hay en otras ocasiones que no nos interesa calcular el número de filas que tenemos en una tabla, sino que queremos saber el número de valores únicos que tenemos en una columna dada. Imaginemos ahora que queremos saber cuántas nacionalidades diferentes tenemos entre nuestros clientes.
     
     ```sql
     /**
@@ -101,7 +107,7 @@ Veamos algunos ejemplos de como podríamos usar esta sentencia:
     FROM "Customer";
     ```
     
-    ![Resultado de la query donde estamos contando el número de registros que tenemos en la columna “Country” de la tabla “Customer”](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen17.png?raw=true)
+    ![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen17.png?raw=true)
     
 
     ```sql
@@ -114,13 +120,13 @@ Veamos algunos ejemplos de como podríamos usar esta sentencia:
     FROM "Customer";
     ```
     
-    ![Resultado de la query donde estamos contando el número de **países distintos** que tenemos  en la columna “Country” en la tabla “Customer”](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen18.png?raw=true)
+    ![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen18.png?raw=true)
     
 **SUM**
 
 La función `SUM` se utiliza para calcular la suma de los valores en una columna numérica. Esta función es útil cuando queremos obtener la suma total de ventas que hemos tenido.
 
-En nuestra BBDD de datos tenemos la tabla *Invoice* en la cual tenemos las ventas realizadas en la plataforma. Cada una de las filas corresponde con una factura, en este contexto podríamos estar interesados en saber cual ha sido el total de ventas que hemos tenido, por lo que tendríamos que sumar el total de cada una de las facturas. Para ello, usaremos la sentencia `SUM` de la siguiente forma: 
+En nuestra BBDD de datos tenemos la tabla "Invoice" en la cual tenemos las ventas realizadas en la plataforma. Cada una de las filas corresponde con una factura, en este contexto podríamos estar interesados en saber cuál ha sido el total de ventas que hemos tenido, por lo que tendríamos que sumar el total de cada una de las facturas. Para ello, usaremos la sentencia `SUM` de la siguiente forma: 
 
 ```sql
 /**
@@ -130,11 +136,11 @@ SELECT SUM("Total") as suma_ventas
 FROM "Invoice";
 ```
 
-![Captura de pantalla 2024-02-07 a las 16.38.08.png](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen19.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen19.png?raw=true)
 
 **AVG**
 
-La función `AVG`  se utiliza para calcular el promedio de los valores de una columna numérica en una tabla.  Podríamos estar interesados en calcular el promedio de la columna total para conocer cual es la media de ventas realizadas en la plataforma. Para eso, la query que deberíamos escribir debería ser: 
+La función `AVG`  se utiliza para calcular el promedio de los valores de una columna numérica en una tabla.  Podríamos estar interesados en calcular el promedio de la columna total para conocer cuál es la media de ventas realizadas en la plataforma. Para eso, la query que deberíamos escribir debería ser: 
 
 ```sql
 /**
@@ -145,7 +151,7 @@ SELECT AVG("Total")
 FROM "Invoice";
 ```
 
-![Resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen20.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen20.png?raw=true)
 
 
 Si bien es cierto que este resultado es correcto, podría interesarnos redondear este valor a 2 decimales. Para eso tendremos que usar la función `ROUND`. Veamos como la podemos incluir en nuestra query: 
@@ -160,14 +166,14 @@ SELECT ROUND(AVG("Total"), 2)
 FROM "Invoice";
 ```
 
-![Resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen21.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen21.png?raw=true)
 
 
 **STDDEV**
 
-La función `STDDEV`  se utiliza para calcular la desviación estándar poblacional de un conjunto de valores en una columna numérica. Recordemos que, la desviación estándar es una medida de dispersión que indica qué tan dispersos están los valores con respecto a la media.
+La función `STDDEV`  se utiliza para calcular la desviación estándar poblacional de un conjunto de valores en una columna numérica. Recordemos que la desviación estándar es una medida de dispersión que indica qué tan dispersos están los valores con respecto a la media.
 
-Sigamos con el ejemplo de las precio pagado por lo usuarios en cada una de las compras de la plataforma. En este caso calcularemos la desviación estándar usando la función `STDDEV`.
+Sigamos con el ejemplo de precio pagado por lo usuarios en cada una de las compras de la plataforma. En este caso calcularemos la desviación estándar usando la función `STDDEV`.
 
 ```sql
 /**
@@ -178,10 +184,10 @@ SELECT ROUND(STDDEV("Total"), 2)
 FROM "Invoice";
 ```
 
-![Resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen22.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen22.png?raw=true)
 
 
-Este resultado nos esta indicando que los valores de cada factura tienden a varia en un promedio de 4,75$ con respecto a la media. Esto significa que hay cierta dispersión en los valores de las facturas, y que algunas facturas pueden estar muy alejados de la media. 
+Este resultado nos esta indicando que los valores de cada factura tienden a variar en un promedio de 4,75$ con respecto a la media. Esto significa que hay cierta dispersión en los valores de las facturas, y que algunas facturas pueden estar muy alejados de la media. 
 
 **VARIANCE**
 
@@ -196,7 +202,7 @@ SELECT ROUND(VARIANCE("Total"), 2)
 FROM "Invoice";
 ```
 
-![Resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen23.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen23.png?raw=true)
 
 Este resultado indica que la dispersión promedio de los valores de la columna “Total” de la tabla “Invoices” respecto de la media es de 22.52 (en unidades al cuadrado). Es decir, los valores de las facturas tienden a variar alrededor de 22.52 en promedio con respecto a la media de 5.65. 
 
@@ -210,14 +216,14 @@ Por ejemplo, imaginemos que quisiéramos sacar el nombre y apellido de los clien
 /** En esta query estamos concatenando las columnas de nombre y apellido en una
 sola columna a la que le hemos puesto el nombre de "nombre_completo" utilizando 
 la sentencia AS.
-Fijaos como dentro de la función concat, el elemento por el que se van a unir 
+Fijaos como dentro de la función CONCAT, el elemento por el que se van a unir (un espacio) 
 las columnas esta indicado con comillas simples.
 **/
 SELECT CONCAT("FirstName", ' ', "LastName") AS nombre_completo 
 FROM "Customer";
 ```
 
-![7 primeros resultados](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen24.png?raw=true)
+![Resultado](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/imagen24.png?raw=true)
 
 
 ### Resumen de las funciones de agregación

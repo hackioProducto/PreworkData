@@ -1,6 +1,6 @@
 ---
 description: >-
-    Los sets son colecciones desordenadas y mutables que almacenan elementos únicos. Son útiles para evitar duplicados y realizar operaciones de conjunto como unión, intersección y diferencia. Soportan elementos heterogéneos y permiten acceso rápido.
+    Son colecciones desordenadas y mutables que almacenan elementos únicos. Son útiles para evitar duplicados y realizar operaciones de conjuntos. Soportan elementos heterogéneos y permiten acceso rápido.
 ---
 
 <div style="text-align: center;">
@@ -143,9 +143,3 @@ Descarga este Jupyter y ábrelo en VS Code.
   </a>
 </div>
 
-
-# Jupyter Ejercicios
-
-{% file src="../Ejercicios/06-sets.ipynb" %}
-Descarga este Jupyter y ábrelo en VS Code para practicar.
-{% endfile %}

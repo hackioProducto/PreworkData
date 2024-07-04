@@ -8,32 +8,32 @@ description: >-
 </div>
 
 
-# Instalación Dbeader
+# Instalación Dbeaver
 
 ## Instalación en MacOS
-- Abre la aplicación de Terminal en Mac.
+- Abrimos la aplicación de Terminal en Mac.
 
-- Escribe el siguiente comando y ejecútalo.
+- Escribimos el siguiente comando y lo ejecutamos.
     
     ```bash
     brew install --cask dbeaver-community
     ```
     
-- Para confirmar que la instalación se realizó correctamente, busca entre las aplicaciones de tu ordenador DBeaver.
+- Para confirmar que la instalación se realizó correctamente, buscamos entre las aplicaciones del ordenador DBeaver.
 
 ## Instalación en Windows
-- Ve a la página oficial de la aplicación, que encontraras en el [siguiente](https://dbeaver.io/download/) enlace y descarga el ejecutable para Windows.
+- Vamos a la página oficial de la aplicación, que encontramos en el [siguiente](https://dbeaver.io/download/) enlace y descargamos el ejecutable para Windows.
 
-- Abre el ejecutable y sigue la guía de instalación paso a paso.
+- Abrimos el ejecutable y seguimos la guía de instalación paso a paso.
 
-- Una vez terminado el proceso de instalación confirmar que tenemos al aplicación en el ordenador.
+- Una vez terminado el proceso de instalación confirmamos que tenemos al aplicación en el ordenador.
 
 #  Instalación PostgreSQL
 
 ## Instalación en MacOS
-- Abre la Terminal en Mac.
+- Abrimos la Terminal en Mac.
 
-- Escribe el siguiente comando y ejecútalo.
+- Escribimos el siguiente comando y lo ejecutamos.
     
     ```bash
     brew install postgresql
@@ -47,19 +47,19 @@ description: >-
     
     Después de iniciar el servicio, en la terminal nos aparecerá un mensaje parecido al siguiente: 
     
-    ![Captura de pantalla 2024-01-31 a las 9.54.15.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/postgresql-activado.png?raw=true)
+    ![Inicio del servicio de posgresql](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/postgresql-activado.png?raw=true)
     
-- Aún así, para confirmar que el inicio del servicio se ejecutó con éxito podemos escribir en al terminal el siguiente comando, el cual nos listará los servicios que tenemos activados.
+- Aún así, para confirmar que el inicio del servicio se ejecutó con éxito podemos escribir en la terminal el siguiente comando, el cual nos listará los servicios que tenemos activados.
     
     ```bash
     brew services list
     ```
         
-    Este comando nos mostrará en pantalla algo similar a lo que vemos en la siguiente imagen (nota, puede que aparezcan más servicios, no pasa nada, lo importante es que este el servicio de postgreSQL): 
+    Este comando nos mostrará en pantalla algo similar a lo que vemos en la siguiente imagen (nota, puede que aparezcan más servicios, no pasa nada, lo importante es que esté el servicio de postgreSQL): 
     
-    ![Captura de pantalla 2024-01-31 a las 9.57.15.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/servicios-activados.png?raw=true)
+    ![Lista de servicios activados](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/servicios-activados.png?raw=true)
     
-- Lo siguiente que vamos a hacer es crear un perfil de usuario nuevo dentro del servicio de postgreSQL. Esto lo debemos hacer porque es necesario para gestionar los permisos a las bases de datos o rastrear la actividad de un usuario en concreto. Para poder hacer esto necesitaremos tener el servicio de postgreSQL iniciado. Una vez que estemos seguros que tenemos el servicio activado, deberemos escribir el siguiente comando en la terminal:
+- Lo siguiente que vamos a hacer es crear un perfil de usuario nuevo dentro del servicio de postgreSQL. Esto lo debemos hacer porque es necesario para gestionar los permisos a las bases de datos o rastrear la actividad de un usuario en concreto. Para poder hacer esto necesitaremos tener el servicio de postgreSQL iniciado. Una vez que estemos seguros de que tenemos el servicio activado, deberemos escribir el siguiente comando en la terminal:
     
     ```bash
     psql -d postgres
@@ -67,7 +67,7 @@ description: >-
         
     Este comando hará que la terminal cambie un poco, y deberemos ver algo similar a lo siguiente: 
     
-    ![Captura de pantalla 2024-01-31 a las 10.04.35.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/inicio-postgresql.png?raw=true)
+    ![Inicialización del servivio de postgreSQL](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/inicio-postgresql.png?raw=true)
         
 - Una vez que estemos en este punto crearemos un nuevo usuario usando el siguiente comando:
     
@@ -77,7 +77,7 @@ description: >-
     
     Esto creará un nuevo usuario llamado **my_user** con una contraseña **admin.** 
     
-    **Nota**: Por experiencia sabemos que los usuarios y contraseñas acaban perdiéndose u olvidándose. Por favor, seguid escrupulosamente estas directrices de lo contrario no nos responsabilizamos de posibles imprevistos durante el curso.
+    **Nota**: Por experiencia sabemos que los usuarios y contraseñas acaban perdiéndose u olvidándose. Por favor, seguid escrupulosamente estas directrices. De lo contrario no nos responsabilizamos de posibles imprevistos durante el curso.
     
 - Lo siguiente que haremos será dar permiso a este usuario para crear bases de datos usando el siguiente comando:
     
@@ -105,21 +105,38 @@ description: >-
 
 ## Instalación en Windows
 
+- Visita la [página oficial](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) de PostgreSQL y descarga el ejecutable con la versión más reciente. 
+
+- Ejecuta el archivo de instalación descargado en el paso anterior. Sigue las instrucciones del asistente de instalación:
+    - Bienvenida: Haz clic en "Next".
+
+    - Selección de componentes: Asegúrate de que las siguientes opciones estén seleccionadas (PostgreSQL Server, Stack Builder) y haz clic en "Next".
+
+    - Directorio de instalación: Deja el directorio que viene por defecto y haz clic en "Next". 
+
+    - Datos del clúster: Deja el directorio que viene por defecto y haz clic en "Next".
+
+    - Contraseña del superusuario: Introduce y confirma una contraseña para el usuario postgres (el superusuario de PostgreSQL). En general os recomendamos que pongáis 'admin'. Sea como sea guardad bien la contraseña por si la necesitamos en otro momento. 
+
+    - Puerto: El puerto predeterminado es 5432. Puedes cambiarlo si es necesario, pero para la mayoría de los usuarios, el puerto predeterminado está bien. Haz clic en "Next".
+
+    - Configuración regional: Selecciona tu configuración regional y haz clic en "Next".
+    
+    - Resumen: Revisa tu configuración y haz clic en "Next" para iniciar la instalación.
 
 
 
-
-# Conexión PostgreSQL y Dbeader
+# Conexión PostgreSQL y Dbeaver
         
 ## Conexión en MacOS
 
-- Antes de terminar todo este proceso, nos queda conectar PostgreSQL con DBeader. Este paso es esencial porque nos va a permitir usar una interfaz gráfica (DBeader) para escribir las consultas en vez de hacerlo por la terminal, como hemos estado haciendo hasta ahora. Para eso tendremos que abrir la aplicación de DBeader. En la parte superior izquierda encontraremos un icono de un enchufe con un +, haremos clic.
+- Antes de terminar todo este proceso, nos queda conectar PostgreSQL con DBeaver. Este paso es esencial porque nos va a permitir usar una interfaz gráfica (DBeaver) para escribir las consultas en vez de hacerlo por la terminal, como hemos estado haciendo hasta ahora. Para eso tendremos que abrir la aplicación de DBeaver. En la parte superior izquierda encontraremos un icono de un enchufe con un +, haremos clic.
     
-    ![Captura de pantalla 2024-02-01 a las 9.45.08.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion1.png?raw=true)
+    ![Icono de iniciar una conexión](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion1.png?raw=true)
     
 - Se nos abrirá una ventana nueva, donde veremos diferentes tipos de BBDD, tendremos que buscar PostgreSQL y dar al botón de siguiente.
     
-    ![Captura de pantalla 2024-02-01 a las 9.51.32.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion2.png?raw=true)
+    ![Selección de la BBDD](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion2.png?raw=true)
     
 - Se nos volverá a abrir una ventana nueva, en la cual tendremos que hacer algunos cambios:
     - En el apartado de **Nombre de Usuario** deberemos poner **my_user.**
@@ -128,22 +145,22 @@ description: >-
 
     - Después de hacer los cambios deberemos darle a **Finalizar**.
         
-        ![Captura de pantalla 2024-02-01 a las 9.56.58.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion3.png?raw=true)
+        ![Interfaz de las propiedades de conexión](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion3.png?raw=true)
         
 - Una vez terminado este proceso, en la parte superior izquierda de la aplicación deberemos ver que aparece postgreSQL, lo que significaría que la conexión se realizó con éxito.
     
-    ![Captura de pantalla 2024-02-01 a las 10.01.04.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion4.png?raw=true)
+    ![Conexión ya creada](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion4.png?raw=true)
         
 
 ## Conexión en Windows
 
-- Antes de terminar todo este proceso, nos queda conectar PostgreSQL con DBeader. Este paso es esencial porque nos va a permitir usar una interfaz gráfica (DBeader) para escribir las consultas en vez de hacerlo por la terminal, como hemos estado haciendo hasta ahora. Para eso tendremos que abrir la aplicación de DBeader. En la parte superior izquierda encontraremos un icono de un enchufe con un +, haremos clic.
+- Antes de terminar todo este proceso, nos queda conectar PostgreSQL con DBeaver. Este paso es esencial porque nos va a permitir usar una interfaz gráfica (DBeaver) para escribir las consultas en vez de hacerlo por la terminal, como hemos estado haciendo hasta ahora. Para eso tendremos que abrir la aplicación de DBeaver. En la parte superior izquierda encontraremos un icono de un enchufe con un +, haremos clic.
     
-    ![Captura de pantalla 2024-02-01 a las 9.45.08.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion1.png?raw=true)
+    ![Icono de iniciar una conexión](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion1.png?raw=true)
     
 - Se nos abrirá una ventana nueva, donde veremos diferentes tipos de BBDD, tendremos que buscar PostgreSQL y dar al botón de siguiente.
     
-    ![Captura de pantalla 2024-02-01 a las 9.51.32.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion2.png?raw=true)
+    ![Selección de la BBDD](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion2.png?raw=true)
     
 - Se nos volverá a abrir una ventana nueva, en la cual tendremos que hacer algunos cambios:
     - En el apartado de **Nombre de Usuario** deberemos poner **my_user.**
@@ -152,9 +169,9 @@ description: >-
 
     - Después de hacer los cambios deberemos darle a **Finalizar**.
         
-        ![Captura de pantalla 2024-02-01 a las 9.56.58.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion3.png?raw=true)
+        ![Interfaz de las propiedades de conexión](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion3.png?raw=true)
         
 - Una vez terminado este proceso, en la parte superior izquierda de la aplicación deberemos ver que aparece postgreSQL, lo que significaría que la conexión se realizó con éxito.
     
-    ![Captura de pantalla 2024-02-01 a las 10.01.04.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion4.png?raw=true)
+    ![Conexión ya creada](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/SQL/conexion4.png?raw=true)
         

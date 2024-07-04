@@ -136,8 +136,3 @@ Descarga este Jupyter y ábrelo en VS Code.
   </a>
 </div>
 
-# Jupyter Ejercicios
-
-{% file src="../Ejercicios/05-diccionarios.ipynb" %}
-Descarga este Jupyter y ábrelo en VS Code para practicar.
-{% endfile %}

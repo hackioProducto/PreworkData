@@ -18,7 +18,7 @@ cd MiProyecto # accedemos a la carpeta
 git init # configuramos la nueva carpeta como un repositorio
 ```
  
-Al escribir `git init` en la terminal se creará un nuevo subdirectorio llamado **`.git`**, que contiene todos los archivos necesarios del repositorio. Es importante saber que esta subcarpeta es una carpeta oculta y que puede que no la veamos si no tenemos configurado nuestro ordenador que se muestren las carpetas ocultas. 
+Al escribir `git init` en la terminal se creará un nuevo subdirectorio llamado **`.git`**, que contiene todos los archivos necesarios del repositorio. Es importante saber que esta subcarpeta es una carpeta oculta y que puede que no la veamos si no tenemos configurado nuestro ordenador para que se muestren las carpetas ocultas. 
 
 # Clonar un Repositorio Remoto
 
@@ -37,7 +37,7 @@ git clone http://github.com/repositorio
 
 En Git, el proceso de agregar archivos al área de *stage* (también conocida como área de preparación) es un paso crucial en el flujo de trabajo. Este paso permite que preparemos los cambios que deseamos incluir en nuestro próximo commit. 
 
-Antes de comenzar, entendamos que es el área de *stage*. Se trata de una zona temporal donde se colocan los cambios que deseamos confirmar en nuestro repositorio de Git. Los archivos en el área de *stage* están listos para ser incluidos en el próximo commit. Este proceso nos permite controlar qué cambios se registran en el historial del proyecto, proporcionando una manera eficiente de gestionar las modificaciones. Los pasos que debemos seguir son: 
+Antes de comenzar, entendamos qué es el área de *stage*. Se trata de una zona temporal donde se colocan los cambios que deseamos confirmar en nuestro repositorio de Git. Los archivos en el área de *stage* están listos para ser incluidos en el próximo commit. Este proceso nos permite controlar qué cambios se registran en el historial del proyecto, proporcionando una manera eficiente de gestionar las modificaciones. Los pasos que debemos seguir son: 
 
 - Verificar el estado del repositorio: Antes de agregar archivos al área de stage, es útil verificar el estado del repositorio para ver qué cambios se han realizado. Esto se puede hacer con el comando:
 
@@ -99,11 +99,11 @@ Una vez que los archivos han sido agregados al área de *stage*, el siguiente pa
 
 Un buen mensaje de commit es crucial para mantener un historial de cambios claro y útil. Algunos consejos para escribir mensajes de *commit* efectivos:
 
-- **Sé claro y conciso**: Describe los cambios realizados de manera breve pero suficiente.
+- **Ser claro y conciso**: Describiremos los cambios realizados de manera breve pero entendible.
 
-- **Usa el tiempo presente**: Escribe los mensajes como si estuvieras dando órdenes (por ejemplo, "Añadir validación" en lugar de "Añadido validación").
+- **Usar el tiempo presente**: Escribiremos los mensajes como si estuviéramos dando órdenes (por ejemplo, "Añadir validación" en lugar de "Añadido validación").
 
-- **Incluye detalles relevantes**: Si es necesario, proporciona contexto sobre por qué se hicieron los cambios.
+- **Incluir detalles relevantes**: Si es necesario, proporcionaremos contexto sobre por qué se hicieron los cambios.
 
 
 
@@ -111,14 +111,14 @@ Un buen mensaje de commit es crucial para mantener un historial de cambios claro
 
 Después de crear *commits* en nuestro repositorio local, es importante sincronizarlos con el repositorio remoto para compartir nuestros cambios con otros colaboradores y asegurarnos de que nuestro trabajo esté respaldado. Subir *commits* al repositorio remoto se realiza utilizando el comando `git push`. Los pasos para subir *commits* al repositorio remoto:
 
-- Subir los *commits*: Para subir nuestros *commits* al repositorio remoto, debemos usar el comando `git push` seguido del nombre del repositorio remoto (`origin` por defecto) y la rama a la que deseamos subir los cambios (por ejemplo, `main`):
+- Subir los *commits*: Para subir nuestros *commits* al repositorio remoto, debemos usar el comando `git push` seguido del nombre del repositorio remoto (`origin` por defecto) y la rama (veremos más adelante qué esto) a la que deseamos subir los cambios (por ejemplo, `main`):
 
      ```bash
      git push origin main
      ```
    Este comando envía nuestros *commits* locales en la rama `main` al repositorio remoto `origin`.
 
-Al subir cambios a un repositorio remoto, es posible que necesitemos autenticarnos. Git nos pedirá nuestras credenciales, o puedes configurar un token de acceso personal para autenticación más segura.
+Al subir cambios a un repositorio remoto, es posible que necesitemos autenticarnos. Git nos pedirá nuestras credenciales, o podemos configurar un token de acceso personal para autenticación más segura.
 
 
 
@@ -158,7 +158,7 @@ Donde:
 - `--all`: Incluye todos los commits de todas las ramas.
 
 
-# Traer los Cambios del Repositorio Remoto**
+# Traer los Cambios del Repositorio Remoto
 
 Traer los cambios del repositorio remoto en Git es una operación fundamental para mantener nuestra copia local del repositorio actualizada con las modificaciones realizadas por otros colaboradores. Esto se logra mediante el comando `git pull`: 
 
@@ -171,11 +171,11 @@ git pull
 
 A veces, cuando traemos cambios del repositorio remoto, pueden ocurrir conflictos si los cambios locales y remotos se solapan. Git te notificará sobre los conflictos y te pedirá que los resuelvas manualmente.
 
-- **Identificar los Conflictos**: Git marca los archivos en conflicto y muestra un mensaje indicando cuáles archivos necesitan atención.
+- **Identificar los Conflictos**: Git marca los archivos en conflicto y muestra un mensaje indicando qué archivos necesitan atención.
 
-- **Resolver los Conflictos**: Deberemos abrir los archivos en conflicto y buscar las secciones marcadas con `<<<<<<<`, `=======`, y `>>>>>>>`. Estas marcas indican las diferencias entre los cambios locales y remotos. Editaremos los archivos para resolver los conflictos y luego guarda los cambios.
+- **Resolver los Conflictos**: Deberemos abrir los archivos en conflicto y buscar las secciones marcadas con `<<<<<<<`, `=======`, y `>>>>>>>`. Estas marcas indican las diferencias entre los cambios locales y remotos. Editaremos los archivos para resolver los conflictos y luego guardaremos los cambios.
 
-- **Agregar los Archivos Resueltos al Área de *Stage***:  Una vez resueltos los conflictos, agrega los archivos al área de *stage*:
+- **Agregar los Archivos Resueltos al Área de *Stage***:  Una vez resueltos los conflictos, agregaremos los archivos al área de *stage*:
 
      ```bash
      git add nombre-del-archivo-resuelto
@@ -189,15 +189,15 @@ A veces, cuando traemos cambios del repositorio remoto, pueden ocurrir conflicto
 
 # Almacenar el Trabajo sin Comentar
 
-En Git, a veces necesitamos interrumpir nuestro trabajo y cambiar de contexto sin perder los cambios no confirmados (*uncommitted*). Git ofrece una funcionalidad llamada "stash" que nos permite guardar temporalmente nuestro trabajo en progreso sin comprometerlo, de modo que podamos volver a un estado limpio del repositorio y luego recuperar tu trabajo más tarde.
+En Git, a veces necesitamos interrumpir nuestro trabajo y cambiar de contexto sin perder los cambios no confirmados (*uncommitted*). Git ofrece una funcionalidad llamada "stash" que nos permite guardar temporalmente nuestro trabajo en progreso sin comprometerlo, de modo que podamos volver a un estado limpio del repositorio y luego recuperar nuestro trabajo más tarde.
 
 ```bash
 git stash
 ```
 
-Este comando guarda las modificaciones en el directorio de trabajo y el área de stage, y deja tu repositorio en un estado limpio (sin cambios no confirmados).
+Este comando guarda las modificaciones en el directorio de trabajo y el área de stage, y deja el repositorio en un estado limpio (sin cambios no confirmados).
 
-Para ver una lista de todos los elementos almacenados en el stash, usa el comando:
+Para ver una lista de todos los elementos almacenados en el stash, usaremos el comando:
 
 ```bash
 git stash list

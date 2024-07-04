@@ -15,7 +15,7 @@ Es un lenguaje de marcado ligero que permite formatear texto de manera simple y 
 
 ## Sintaxis de Markdown
 
-- Distintos títulos usando #. Podemos meter hasta 6 tamaños de títulos diferentes.
+- Distintos títulos usando `#`. Podemos meter hasta 6 tamaños de títulos diferentes simplemente añadiendo más `#`.
 
 - Negrita: `**` o `__`.
 
@@ -62,7 +62,7 @@ Es un lenguaje de marcado ligero que permite formatear texto de manera simple y 
         ![imagen1](direccion/imagen)
         ```
         
-- Tablas: tendremos que seguir una sintaxis como la que tenemos a continuación. En este caso estamos creando una tabla 3 filas y 5 columnas.
+- Tablas: Tendremos que seguir una sintaxis como la que tenemos a continuación. En este caso estamos creando una tabla 3 filas y 5 columnas.
     
     ```markdown
     |   |   |   |   |   |
@@ -80,7 +80,7 @@ Es un lenguaje de marcado ligero que permite formatear texto de manera simple y 
 
 - Superscript: `H<sup>3<sup>`.
 
-- Subscript: `H<sub>2<sub>`tipo.
+- Subscript: `H<sub>2<sub>`.
 
 - Formatear tipo, tamaño y color de letra: Para modificar la tipografía directamente tendremos que usar html. Algunos de las opciones más sencillas son:
 
@@ -88,7 +88,7 @@ Es un lenguaje de marcado ligero que permite formatear texto de manera simple y 
         
          **`<span style="color:blue">Texto de color azul</span>`**.
         
-    - Cambiar el tamaño de la Fuente
+    - Cambiar el tamaño de la fuente
         
         **`<font size="4">Texto de tamaño 4</font>`**.
         
@@ -100,7 +100,7 @@ Es un lenguaje de marcado ligero que permite formatear texto de manera simple y 
         
         ```markdown
         <p style="font-family: Arial"><font size="4" color="blue">Texto de tamaño 4 y color azul con fuente Arial</font></p>
-        ```
+        
         
 - Insertar archivo/imagen descargable.
     
@@ -108,12 +108,13 @@ Es un lenguaje de marcado ligero que permite formatear texto de manera simple y 
     {% file src="../texto.txt" %}
     Descarga este fichero para mas detalles
     {% endfile %}
-    ```
+
+# Videos
 
 #### Video Sintaxis de Markdown
 
 <div align="center">
-<a href="https://vimeo.com/913702281/0d0e21448d?share=copy">
+<a href="https://vimeo.com/963085171/f9e0a4a97d?share=copy">
 <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="terminal" style="display: block; margin-left: auto; margin-right: auto;" />
 </a>
 </div> 

@@ -1,6 +1,6 @@
 ---
 description: >-
-   Aprenderemos a configurar el nombre y email en Git, activar la colorización de comandos, consultar configuraciones, crear alias, y habilitar el completado predictivo. 
+   Aprenderemos a instalar Excel en Windows y Mac, tanto las versiones de pago como las gratuitas del paquete de Office. Excel es una herramienta poderosa para la creación y gestión de hojas de cálculo, permitiendo realizar cálculos complejos, análisis de datos, creación de gráficos e informes, y automatización de tareas mediante macros.. 
 ---
 
 <div style="text-align: center;">
@@ -15,7 +15,7 @@ Si tienes un equipo Windows, probablemente incluya la suite de Office por defect
 - **Comprando una Suscripción de Microsoft 365 (De Pago)**
 
     - **Visita el sitio web de [Microsoft 365](https://www.office.com/)** y selecciona un plan que incluya Excel.
-      ![365](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/web365.png?raw=true)
+      ![Descargar Office 365](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/web365.png?raw=true)
 
     - Selecciona "Obtener Microsoft 365". 
 
@@ -30,7 +30,7 @@ Si tienes un equipo Windows, probablemente incluya la suite de Office por defect
     - **Visita [Office Online](https://www.microsoft.com/es-es/microsoft-365/free-office-online-for-the-web)** y crea una cuenta Microsoft si no tienes una.
 
     - Inicia sesión y haz clic en el ícono de Excel para usar Excel Online.
-    ![online](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/excel-online.png?raw=true)
+    ![Excel Online gratuito](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/excel-online.png?raw=true)
 
     - **Ventajas**: Acceso gratuito a las funciones básicas de Excel, almacenamiento en la nube a través de OneDrive, y la posibilidad de colaborar en tiempo real.
     - **Limitaciones**: Algunas funciones avanzadas no están disponibles en la versión online.
@@ -54,7 +54,7 @@ Para trabajar con Excel en Mac, tenemos varias opciones tanto gratuitas como de 
 - **Comprando una suscripción de Microsoft 365 (De Pago)**
 
     - Visita el sitio web de [Microsoft 365](https://www.office.com/) y selecciona un plan que incluya Excel.
-      ![365](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/web365.png?raw=true)
+      ![Descargar Office 365](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/web365.png?raw=true)
 
     - Seleccionamos "Obtener Microsoft 365". 
 
@@ -69,7 +69,7 @@ Para trabajar con Excel en Mac, tenemos varias opciones tanto gratuitas como de 
     - Visita [Office](https://www.microsoft.com/es-es/microsoft-365/free-office-online-for-the-web) y crea una cuenta Microsoft si no tienes una.
 
     - Inicia sesión y haz clic en el ícono de Excel para usar Excel Online.
-    ![online](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/excel-online.png?raw=true)
+    ![Excel Online gratuito](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/excel-online.png?raw=true)
 
     - **Ventajas**: Acceso gratuito a las funciones básicas de Excel, almacenamiento en la nube a través de OneDrive, y la posibilidad de colaborar en tiempo real.
     - **Limitaciones**: Algunas funciones avanzadas no están disponibles en la versión online.
@@ -79,6 +79,7 @@ Para trabajar con Excel en Mac, tenemos varias opciones tanto gratuitas como de 
     - Abre el Mac App Store en tu Mac.
 
     - Buscamos "Microsoft Excel" y haz clic en "Obtener" para descargar la aplicación.
+    ![Descargar Excel desde AppStore](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Excel/excel-appstore-mac.png?raw=true)
 
     - Una vez descargada, abre Excel y sigue las instrucciones para iniciar sesión con tu cuenta Microsoft.
 

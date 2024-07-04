@@ -126,24 +126,19 @@ Descarga este Jupyter y ábrelo en VS Code.
 
 #### Funciones con parámetros
 <div align="center">
-  <a href="https://vimeo.com/938997522/df325915b5?share=copy">
+  <a href="https://vimeo.com/938597538/6de3557143?share=copy">
     <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="funciones con parámetros" />
   </a>
 </div>
 
 #### Funciones con parámetros por defecto
 <div align="center">
-  <a href="https://vimeo.com/933851538/326f418494?share=copy">
+  <a href="https://vimeo.com/938997522/df325915b5?share=copy">
     <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="defecto" />
   </a>
 </div>
 
-#### Funciones con parámetros
-<div align="center">
-  <a href="https://vimeo.com/938997522/df325915b5?share=copy">
-    <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="funciones con parámetros" />
-  </a>
-</div>
+
 
 #### *args* y *kwargs*
 <div align="center">
@@ -154,15 +149,8 @@ Descarga este Jupyter y ábrelo en VS Code.
 
 #### Recursividad
 <div align="center">
-  <a href="https://vimeo.com/938643400/b915c84a39?share=copy ">
+  <a href="https://vimeo.com/938643400/b915c84a39?share=copy">
     <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="recursividad" />
   </a>
 </div>
 
-
-
-# Jupyter Ejercicios
-
-{% file src="../Ejercicios/09-funciones.ipynb" %}
-Descarga este Jupyter y ábrelo en VS Code para practicar.
-{% endfile %}

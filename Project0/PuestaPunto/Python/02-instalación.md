@@ -1,6 +1,6 @@
 ---
 description: >-
-  Los alumnos aprenderán a instalar Python y pip en macOS y Windows, verificar la instalación y gestionar paquetes con pip.
+  Aquí aprederemos a instalar Python y pip en macOS y Windows, verificar la instalación y gestionar paquetes con pip.
 ---
 
 <div style="text-align: center;">
@@ -11,22 +11,22 @@ description: >-
 
 ## Instalación en MacOS
 
-Para instalar Python en Mac sigue los siguientes pasos: 
+Para instalar Python en Mac seguiremos los siguientes pasos: 
 
-- Abre la terminal en Mac.
+- Abrimos la terminal en Mac.
 
-- Escribe el siguiente comando y ejecútalo.
+- Escribimos el siguiente comando y lo ejecutamos.
     
     ```bash
     brew install python3
     ```
     
-- Para confirmar que la instalación de Python se ejecutó correctamente escribe el siguiente mensaje en la terminal:
+- Para confirmar que la instalación de Python se ejecutó correctamente escribimos el siguiente mensaje en la terminal:
     
     ```bash
     python --version
     
-    # en caso de que te de error prueba con:
+    # en caso de que nos dé error probaremos con:
     python3 --version
     ```
     
@@ -38,9 +38,9 @@ Para instalar Python en Mac sigue los siguientes pasos:
     
 - Puede que después de este paso salga un mensaje en la terminal similar al que vemos a continuación. No pasa nada, es una simple advertencia, pero todo debería haber ido bien.
         
-    ![Captura de pantalla 2024-01-30 a las 15.52.06.png](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Python/error-instalacion-python-mac.png?raw=true)
+    ![Aviso instalación pip](https://github.com/Hack-io-Data/Imagenes/blob/main/04-Prework/Python/error-instalacion-python-mac.png?raw=true)
         
-- Para confirmar que la instalación ha sido correcta escribe en la terminal:
+- Para confirmar que la instalación ha sido correcta escribimos en la terminal:
     
     ```bash
     pip3 --version
@@ -54,25 +54,25 @@ Para instalar Python en Mac sigue los siguientes pasos:
 
 ## Instalación en Windows
 
-Para instalar Python en Windows, sigue los siguientes pasos:
+Para instalar Python en Windows, seguiremos los siguientes pasos:
 
-- Descarga el instalador de la [página oficial](https://www.python.org/downloads/) de Python.
+- Descargamos el instalador de la [página oficial](https://www.python.org/downloads/) de Python.
 
-- Ejecuta el ejecutable descargado.
+- Ejecutamos el archivo descargado.
 
-- Selecciona la opción “Agregar Python 3.x a PATH” y haz clic en “Personalizar instalación”.
+- Seleccionamos la opción “Agregar Python 3.x a PATH” y hacemos clic en “Personalizar instalación”.
 
-- Selecciona las opciones que deseas instalar y haz clic en “Siguiente”.
+- Seleccionamos las opciones que deseamos instalar y hacemos clic en “Siguiente”.
 
-- Haz clic en “Instalar” para comenzar la instalación.
+- Hacemos clic en “Instalar” para comenzar la instalación.
 
-- Espera a que se complete la instalación.
+- Esperamos a que se complete la instalación.
 
-- Para confirmar que la instalación se ejecutó correctamente, abre la terminal y escribe:
+- Para confirmar que la instalación se ejecutó correctamente, abrimos la terminal y escribimos:
 
     ```bash
     python --version
 
-    # en caso de que te de error prueba con:
+    # en caso de que nos dé error, probaremos con:
     python3 --version
     ```
