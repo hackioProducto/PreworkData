@@ -133,7 +133,7 @@ description: >-
   </a>
 </div>
 
-#### Tablas Dinámicas desde Diferentes Hojas
+#### Tablas Dinámicas desde Diferentes Hojas (solo para usuarios de Windows, Mac no tiene este complemento)
 <div align="center">
   <a href="https://vimeo.com/844287167/5bc7ae6414">
     <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/Cabecera%20video%20Gitbook%20Hackio.png?raw=true" alt="Métodos listas" />
